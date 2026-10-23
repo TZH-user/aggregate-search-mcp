@@ -1,0 +1,227 @@
+{
+  "_meta": {
+    "judge": "LLM (GLM-5.3, 会话主模型)",
+    "date": "2026-10-23",
+    "disclosure": "判分者见过两侧原始输出,属半盲;每条判分附 evidence 供人工复核。实际执行顺序:aggregate 先跑全部14题,内置后跑(goldset.md 原写反了,已更正)。",
+    "rubric": {"2": "直接回答意图", "1": "同主题相关但不直接回答/非权威源", "0": "跑题或错实体"}
+  },
+  "A1": {
+    "agg": [
+      {"rank": 1, "score": 2, "evidence": "智谱官网,snippet 含 GLM-5.3 → 金标事实命中"},
+      {"rank": 2, "score": 2, "evidence": "官方'模型与产品发布记录'页,snippet 含 GLM-5.3-Flash"},
+      {"rank": 3, "score": 1, "evidence": "华尔街见闻报道的是 GLM-5(2月),非最新"},
+      {"rank": 4, "score": 2, "evidence": "官方 GLM-5.3 模型页 → 金标事实命中"},
+      {"rank": 5, "score": 1, "evidence": "GLM-5.2 上一代模型页"}
+    ],
+    "web": [
+      {"rank": 1, "score": 2, "evidence": "官方 GLM-5.3 说明页 → 金标事实命中"},
+      {"rank": 2, "score": 2, "evidence": "华尔街见闻 GLM-5.3 报道"},
+      {"rank": 3, "score": 2, "evidence": "智谱官网,展示 GLM-5.3"},
+      {"rank": 4, "score": 2, "evidence": "BigModel 开放平台官方站"},
+      {"rank": 5, "score": 2, "evidence": "官方发布记录页"}
+    ]
+  },
+  "A2": {
+    "agg": [
+      {"rank": 1, "score": 2, "evidence": "新快网:安妮·卡森获2026诺奖文学奖 → 金标命中(bocha+zhipu 跨源)"},
+      {"rank": 2, "score": 2, "evidence": "RFI 报道安妮·卡森 → 与内置侧来源一致"},
+      {"rank": 3, "score": 2, "evidence": "美国之音中文脸书:安妮·卡森"},
+      {"rank": 4, "score": 2, "evidence": "腾讯新闻:安妮·卡森"},
+      {"rank": 5, "score": 2, "evidence": "金讯网:安妮卡森"}
+    ],
+    "web": [
+      {"rank": 1, "score": 2, "evidence": "金标命中:摘要直接给出答案安妮·卡森(RFI 2026-10-08),与 aggregate 侧 5 条独立来源一致;仅返回1条链接,覆盖不足"}
+    ]
+  },
+  "A3": {
+    "agg": [
+      {"rank": 1, "score": 2, "evidence": "Apple 官方 Newsroom(2026/09)→ 金标'2026年9月发布'命中"},
+      {"rank": 2, "score": 2, "evidence": "百度百科:2026年9月发布 → 金标命中"},
+      {"rank": 3, "score": 2, "evidence": "B站发布会完整回放"},
+      {"rank": 4, "score": 0, "evidence": "错实体:sohu 讲的是 iOS 18(2024年系统更新),非 iPhone 18 手机 → 垃圾"},
+      {"rank": 5, "score": 2, "evidence": "凤凰网:iPhone 18 两批发布计划"}
+    ],
+    "web": [
+      {"rank": 1, "score": 2, "evidence": "Apple 官方 Newsroom,摘要明确 2026-09-09 → 金标命中"},
+      {"rank": 2, "score": 2, "evidence": "iPhone 18 系列懒人包"},
+      {"rank": 3, "score": 2, "evidence": "百度百科 iPhone 18"},
+      {"rank": 4, "score": 2, "evidence": "上市时间整理"},
+      {"rank": 5, "score": 2, "evidence": "知乎:标准版延期分析"}
+    ]
+  },
+  "B1": {
+    "agg": [
+      {"rank": 1, "score": 2, "evidence": "modelcontextprotocol.io 官方规范页 → 域名金标命中"},
+      {"rank": 2, "score": 1, "evidence": "modelcontextprotocol.info 为非官方镜像域,内容是规范但非官方源"},
+      {"rank": 3, "score": 1, "evidence": "维基百科条目,相关非规范原文"},
+      {"rank": 4, "score": 2, "evidence": "官方 GitHub 组织(规范仓库所在)"},
+      {"rank": 5, "score": 2, "evidence": "官方博客 2026-07-28 新版规范公告"}
+    ],
+    "web": [
+      {"rank": 1, "score": 2, "evidence": "modelcontextprotocol.io 规范页 → 域名金标命中"},
+      {"rank": 2, "score": 2, "evidence": "官方 GitHub 组织"},
+      {"rank": 3, "score": 2, "evidence": "官方规范仓库"},
+      {"rank": 4, "score": 1, "evidence": "Anthropic 发布公告,相关非规范本身"},
+      {"rank": 5, "score": 2, "evidence": "官方 2025-11-25 版规范页"}
+    ]
+  },
+  "B2": {
+    "agg": [
+      {"rank": 1, "score": 1, "evidence": "GeeksForGeeks 教程,相关非官方文档"},
+      {"rank": 2, "score": 1, "evidence": "Refine 博客教程,非官方"},
+      {"rank": 3, "score": 2, "evidence": "官方 GitHub 组织"},
+      {"rank": 4, "score": 1, "evidence": "Uptrace 教程,非官方"},
+      {"rank": 5, "score": 2, "evidence": "fastapi.tiangolo.com 官方文档 → 域名金标命中,但排第5"}
+    ],
+    "web": [
+      {"rank": 1, "score": 2, "evidence": "fastapi.tiangolo.com → 域名金标命中,第1"},
+      {"rank": 2, "score": 2, "evidence": "官方 GitHub 组织"},
+      {"rank": 3, "score": 1, "evidence": "社区教程站,非官方"},
+      {"rank": 4, "score": 1, "evidence": "GeeksForGeeks 教程"},
+      {"rank": 5, "score": 1, "evidence": "Reddit 入门指南"}
+    ]
+  },
+  "B3": {
+    "agg": [
+      {"rank": 1, "score": 2, "evidence": "docs.python.org asyncio 官方文档 → 域名金标命中"},
+      {"rank": 2, "score": 2, "evidence": "docs.python.org 官方 HOWTO"},
+      {"rank": 3, "score": 1, "evidence": "python-can 第三方库文档"},
+      {"rank": 4, "score": 1, "evidence": "BBC 博客概念讲解"},
+      {"rank": 5, "score": 1, "evidence": "YouTube 教程"}
+    ],
+    "web": [
+      {"rank": 1, "score": 2, "evidence": "docs.python.org asyncio → 域名金标命中"},
+      {"rank": 2, "score": 2, "evidence": "docs.python.org 官方 HOWTO"},
+      {"rank": 3, "score": 1, "evidence": "python-can 第三方文档"},
+      {"rank": 4, "score": 1, "evidence": "W3Schools 参考"},
+      {"rank": 5, "score": 1, "evidence": "Real Python 教程"}
+    ]
+  },
+  "C1": {
+    "agg": [
+      {"rank": 1, "score": 1, "evidence": "php.cn 新闻报道平台能力,非文档"},
+      {"rank": 2, "score": 2, "evidence": "docs.bigmodel.cn 快速开始 → 域名金标命中(第2)"},
+      {"rank": 3, "score": 2, "evidence": "docs.bigmodel.cn 平台介绍"},
+      {"rank": 4, "score": 1, "evidence": "PicoClaw 第三方集成文档"},
+      {"rank": 5, "score": 2, "evidence": "docs.bigmodel.cn HTTP API 调用文档"}
+    ],
+    "web": [
+      {"rank": 1, "score": 2, "evidence": "open.bigmodel.cn/doc/api 官方API文档入口 → 域名金标命中(第1)"},
+      {"rank": 2, "score": 2, "evidence": "docs.bigmodel.cn 文档中心"},
+      {"rank": 3, "score": 2, "evidence": "官方 LangChain 集成文档"},
+      {"rank": 4, "score": 2, "evidence": "官方 AutoGLM 文档"},
+      {"rank": 5, "score": 1, "evidence": "智谱官网首页,非文档"}
+    ]
+  },
+  "C2": {
+    "agg": [
+      {"rank": 1, "score": 2, "evidence": "open.bochaai.com 官方开放平台 → 域名金标命中(第1,bocha+serper 跨源)"},
+      {"rank": 2, "score": 2, "evidence": "官方 GitHub bocha-search-mcp"},
+      {"rank": 3, "score": 1, "evidence": "官网服务协议页,官方域但非首页/产品页"},
+      {"rank": 4, "score": 1, "evidence": "官网隐私政策页,同上"},
+      {"rank": 5, "score": 1, "evidence": "知乎第三方使用教程"}
+    ],
+    "web": [
+      {"rank": 1, "score": 2, "evidence": "open.bochaai.com → 域名金标命中(第1)"},
+      {"rank": 2, "score": 2, "evidence": "bocha.cn 官方C端产品站"},
+      {"rank": 3, "score": 2, "evidence": "官方 GitHub MCP 仓库"},
+      {"rank": 4, "score": 1, "evidence": "服务协议页"},
+      {"rank": 5, "score": 1, "evidence": "阿里云市场第三方分发页"}
+    ]
+  },
+  "C3": {
+    "agg": [
+      {"rank": 1, "score": 1, "evidence": "维基百科条目,相关非官网"},
+      {"rank": 2, "score": 2, "evidence": "官方 GitHub 组织(snippet 含 www.rust-lang.org 链接,但结果本身域名为 github)→ 不构成域名命中"},
+      {"rank": 3, "score": 1, "evidence": "官方书中文翻译版,相关资源非官网"},
+      {"rank": 4, "score": 1, "evidence": "博客园第三方简介"},
+      {"rank": 5, "score": 0, "evidence": "错实体:RustDesk 远程桌面软件评测 ≠ Rust 语言 → 垃圾"}
+    ],
+    "gold_miss_reason": "金标域名 rust-lang.org 未出现在 top-5 任何结果的 URL 中(仅作为 GitHub 页 snippet 里的文字出现)",
+    "web": [
+      {"rank": 1, "score": 2, "evidence": "rust-lang.org 官网 → 域名金标命中(第1)"},
+      {"rank": 2, "score": 1, "evidence": "维基百科"},
+      {"rank": 3, "score": 1, "evidence": "官方书中文版"},
+      {"rank": 4, "score": 1, "evidence": "rustwiki.org 社区中文站,非官方"},
+      {"rank": 5, "score": 2, "evidence": "官方 GitHub 组织"}
+    ]
+  },
+  "D1": {
+    "agg": [
+      {"rank": 1, "score": 0, "evidence": "models.com 时尚模特网,与 MCP 协议无关 → 垃圾(tavily)"},
+      {"rank": 2, "score": 2, "evidence": "官方博客 2026-07-28 规范"},
+      {"rank": 3, "score": 0, "evidence": "Merriam-Webster 'model' 词典页 → 垃圾(tavily)"},
+      {"rank": 4, "score": 2, "evidence": "Stacklok MCP 企业采用调研"},
+      {"rank": 5, "score": 0, "evidence": "GetModel 模特经纪站 → 垃圾(tavily)"}
+    ],
+    "web": [
+      {"rank": 1, "score": 2, "evidence": "GlobeNewswire 2026-10-21 MCP Beta 新闻,恰好是10月真新闻"},
+      {"rank": 2, "score": 2, "evidence": "官方博客规范发布"},
+      {"rank": 3, "score": 2, "evidence": "InfoWorld stateless 报道"},
+      {"rank": 4, "score": 2, "evidence": "Stacklok 调研"},
+      {"rank": 5, "score": 2, "evidence": "CIO 报道"}
+    ]
+  },
+  "D2": {
+    "agg": [
+      {"rank": 1, "score": 2, "evidence": "indietraveller 爪哇岛攻略"},
+      {"rank": 2, "score": 2, "evidence": "YouTube 爪哇岛 Top10"},
+      {"rank": 3, "score": 2, "evidence": "Rough Guides 爪哇旅游"},
+      {"rank": 4, "score": 2, "evidence": "2周行程攻略"},
+      {"rank": 5, "score": 2, "evidence": "Responsible Travel 攻略"}
+    ],
+    "agg_note": "本题 zhipu 引擎一次失败自动降级,仍由其余引擎补满5条",
+    "web": [
+      {"rank": 1, "score": 2, "evidence": "indietraveller 同款攻略"},
+      {"rank": 2, "score": 2, "evidence": "Rough Guides"},
+      {"rank": 3, "score": 2, "evidence": "Reddit 实用攻略"},
+      {"rank": 4, "score": 2, "evidence": "Responsible Travel"},
+      {"rank": 5, "score": 2, "evidence": "Lonely Planet 行程"}
+    ]
+  },
+  "D3": {
+    "agg": [
+      {"rank": 1, "score": 2, "evidence": "Healthline 苹果营养"},
+      {"rank": 2, "score": 2, "evidence": "新罕布什尔果农协会营养页"},
+      {"rank": 3, "score": 2, "evidence": "Pink Lady 苹果营养"},
+      {"rank": 4, "score": 2, "evidence": "华盛顿苹果协会营养页"},
+      {"rank": 5, "score": 2, "evidence": "USDA SNAP-Ed 苹果营养"}
+    ],
+    "agg_note": "延迟 21.4s,远高于其余题",
+    "web": [
+      {"rank": 1, "score": 2, "evidence": "Healthline"},
+      {"rank": 2, "score": 2, "evidence": "哈佛公共卫生学院"},
+      {"rank": 3, "score": 2, "evidence": "USDA"}
+    ],
+    "web_note": "仅返回3条链接"
+  },
+  "E1": {
+    "agg": [
+      {"rank": 1, "score": 2, "evidence": "MDN:451 Unavailable For Legal Reasons → 金标短语命中(第1)"},
+      {"rank": 2, "score": 2, "evidence": "http.dev 451 解说页(标题正确)"},
+      {"rank": 3, "score": 2, "evidence": "RFC 7725 原文"},
+      {"rank": 4, "score": 1, "evidence": "YouTube 修复/绕过教学,相关非定义"},
+      {"rank": 5, "score": 2, "evidence": "腾讯云开发者中文解读"}
+    ],
+    "web": [
+      {"rank": 1, "score": 2, "evidence": "摘要直接给出 'Unavailable For Legal Reasons'+RFC 7725 → 金标命中;链接仅3条(RFC/Wikipedia/MDN)全2分"}
+    ],
+    "web_all_scores": [2, 2, 2]
+  },
+  "E2": {
+    "agg": [
+      {"rank": 1, "score": 2, "evidence": "Medium snippet 含公式 1/(k+r(d)) → 金标公式命中(第1);k=60 在截断 snippet 中不可见"},
+      {"rank": 2, "score": 2, "evidence": "Elasticsearch 官方文档含公式"},
+      {"rank": 3, "score": 2, "evidence": "OpenSearch 官方博客含公式"},
+      {"rank": 4, "score": 2, "evidence": "MongoDB RRF 解说"},
+      {"rank": 5, "score": 2, "evidence": "ParadeDB 解说"}
+    ],
+    "web": [
+      {"rank": 1, "score": 2, "evidence": "Medium 同款,摘要给出完整公式与 k=60 → 金标命中"},
+      {"rank": 2, "score": 2, "evidence": "Elasticsearch 文档"},
+      {"rank": 3, "score": 2, "evidence": "OpenSearch 博客"},
+      {"rank": 4, "score": 2, "evidence": "ParadeDB"},
+      {"rank": 5, "score": 2, "evidence": "MongoDB"}
+    ]
+  }
+}

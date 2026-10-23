@@ -1,0 +1,98 @@
+{
+  "query_id": "D2",
+  "query": "Java island travel guide",
+  "latency_s": 2.79,
+  "engines_used": [
+    "bocha",
+    "tavily",
+    "serper"
+  ],
+  "engines_failed": [],
+  "engine_errors": {},
+  "relevance": {
+    "enabled": true,
+    "terms": 4,
+    "dropped": 0,
+    "downweighted": 1,
+    "boosted": 0,
+    "dropped_items": [],
+    "downweighted_items": [
+      {
+        "title": "Java, {Country} Hướng dẫn du lịch  Những việc nên làm tại Ja",
+        "url": "https://www.jetstar.com/vn/vi/inspiration/destinations/indonesia/java"
+      }
+    ],
+    "domain_rules": {
+      "blocked": 0,
+      "boosted": 0,
+      "blocked_items": [],
+      "boosted_items": []
+    },
+    "rerank": {
+      "modes": [
+        "embedding"
+      ],
+      "embedding": {
+        "enabled": true,
+        "embedded": 16,
+        "error": null,
+        "sim_min": 0.4398,
+        "sim_max": 0.6521
+      },
+      "llm": null
+    }
+  },
+  "results": [
+    {
+      "title": "Java travel guide",
+      "url": "https://www.responsiblevacation.com/vacations/java/travel-guide",
+      "snippet": "Honest and easy to read Java travel guide with location summary, useful map and highlights. It is the most populous island in the world, home to 141 million ...",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "Java | Indonesia Travel Guide | Rough Guides",
+      "url": "https://www.roughguides.com/indonesia/java",
+      "snippet": "Plan your visit to Java, Indonesia: find out where to go and what to do. Read about itineraries, activities, places to stay and travel essentials.",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "Java Travel Guide | Your 1–2 Week Route In The Island",
+      "url": "https://www.indietraveller.co/java-travel-guide",
+      "snippet": "Heading to Java? This 1–2 week Java travel guide covers epic volcanoes, sacred temples, and unforgettable local moments across the island.",
+      "published_date": "Jul 14, 2025",
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "Amazon Best Sellers: Best Java Travel Guides",
+      "url": "https://www.amazon.com/Best-Sellers-Java-Travel-Guides/zgbs/books/67639",
+      "snippet": "Indonesia Travel Guide 2025-2026 & Beyond: Your Ultimate Guide to Bali, Java, Sumatra, Lombok, Komodo, and Sulawesi — Top Attractions, Hidden Gems, Culture, and ...",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "Java Itinerary: 2-week Java Guide And Travel Advice",
+      "url": "https://cassiethehag.com/java-travel-guide-2-week-itinerary-and-backpacking-information-for-java",
+      "snippet": "The Java itinerary focuses on spending one week in Central Java and one week in East Java. It mixes both must-see attractions and off-the-beaten-track,",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    }
+  ],
+  "error": null
+}

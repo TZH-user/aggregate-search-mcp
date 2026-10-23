@@ -1,0 +1,554 @@
+{
+  "H1": {
+    "query": "Transformers movie 2026 box office",
+    "kind": "trap",
+    "intent": "变形金刚电影(非ML transformer论文)",
+    "off": {
+      "latency_s": 5.19,
+      "relevance": {
+        "enabled": false,
+        "terms": 0,
+        "dropped": 0,
+        "downweighted": 0,
+        "boosted": 0
+      },
+      "results": [
+        {
+          "title": "40th Anniversary - The Transformers: The Movie",
+          "url": "https://www.boxofficemojo.com/release/rl190021889"
+        },
+        {
+          "title": "Transformers: The Movie grosses over $10 million at ...",
+          "url": "https://www.facebook.com/BotConOfficial/posts/it-may-have-taken-40-years-but-transformers-the-movie-has-now-grossed-over-10-mi/1519323333553073"
+        },
+        {
+          "title": "Transformers: The Movie grossed $1 million on Thursday ...",
+          "url": "https://www.reddit.com/r/boxoffice/comments/1wk23ct/transformers_the_movie_grossed_1_million_on"
+        },
+        {
+          "title": "The original Transformers are back ...",
+          "url": "https://www.facebook.com/CBROfficialPage/posts/the-original-transformers-are-back-the-transformers-movie-is-back-in-2026-with-a/1669646534524173"
+        },
+        {
+          "title": "The Wertzone: TRANSFORMERS: THE MOVIE surges into profitability at the box office forty years after release",
+          "url": "https://thewertzone.blogspot.com/2026/09/transformers-movie-surges-into.html"
+        }
+      ]
+    },
+    "on": {
+      "latency_s": 2.77,
+      "relevance": {
+        "enabled": true,
+        "terms": 5,
+        "dropped": 0,
+        "downweighted": 6,
+        "boosted": 0
+      },
+      "results": [
+        {
+          "title": "40th Anniversary - The Transformers: The Movie",
+          "url": "https://www.boxofficemojo.com/release/rl190021889"
+        },
+        {
+          "title": "Transformers: The Movie grosses over $10 million at ...",
+          "url": "https://www.facebook.com/BotConOfficial/posts/it-may-have-taken-40-years-but-transformers-the-movie-has-now-grossed-over-10-mi/1519323333553073"
+        },
+        {
+          "title": "Transformers Franchise Box Office History - The Numbers",
+          "url": "https://www.the-numbers.com/movies/franchise/Transformers"
+        },
+        {
+          "title": "Transformers: The Movie grossed $1 million on Thursday ...",
+          "url": "https://www.reddit.com/r/boxoffice/comments/1wk23ct/transformers_the_movie_grossed_1_million_on"
+        },
+        {
+          "title": "The Wertzone: TRANSFORMERS: THE MOVIE surges into profitability at the box office forty years after release",
+          "url": "https://thewertzone.blogspot.com/2026/09/transformers-movie-surges-into.html"
+        }
+      ]
+    }
+  },
+  "H2": {
+    "query": "Go board game rules beginners",
+    "kind": "trap",
+    "intent": "围棋规则(非golang)",
+    "off": {
+      "latency_s": 3.25,
+      "relevance": {
+        "enabled": false,
+        "terms": 0,
+        "dropped": 0,
+        "downweighted": 0,
+        "boosted": 0
+      },
+      "results": [
+        {
+          "title": "Beginners - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Beginners"
+        },
+        {
+          "title": "Beginners | Rotten Tomatoes",
+          "url": "https://www.rottentomatoes.com/m/beginners"
+        },
+        {
+          "title": "Beginners",
+          "url": "https://www.focusfeatures.com/beginners"
+        },
+        {
+          "title": "BEGINNERS (@_beginners) • Instagram photos and videos",
+          "url": "https://www.instagram.com/_beginners?hl=en"
+        },
+        {
+          "title": "Netflix",
+          "url": "https://www.netflix.com/title/70148804"
+        }
+      ]
+    },
+    "on": {
+      "latency_s": 2.66,
+      "relevance": {
+        "enabled": true,
+        "terms": 5,
+        "dropped": 0,
+        "downweighted": 9,
+        "boosted": 0
+      },
+      "results": [
+        {
+          "title": "Rules Explained | Beginner Tutorial on Go Game, Baduk, Weiqi",
+          "url": "https://www.youtube.com/watch?v=oZTdT8MQexk&vl=en"
+        },
+        {
+          "title": "Beginners | Rotten Tomatoes",
+          "url": "https://www.rottentomatoes.com/m/beginners"
+        },
+        {
+          "title": "I have created an image to help you understand the rules ...",
+          "url": "https://www.reddit.com/r/baduk/comments/vn936i/i_have_created_an_image_to_help_you_understand"
+        },
+        {
+          "title": "How to Play Go — A Modern Tutorial to Learn Go Rules",
+          "url": "https://gomagic.org/how-to-play-go-rules"
+        },
+        {
+          "title": "Rules of Go",
+          "url": "https://en.wikipedia.org/wiki/Rules_of_Go"
+        }
+      ]
+    }
+  },
+  "H3": {
+    "query": "mermaid diagram syntax tutorial",
+    "kind": "trap",
+    "intent": "mermaid图表工具(非神话/电影)",
+    "off": {
+      "latency_s": 2.88,
+      "relevance": {
+        "enabled": false,
+        "terms": 0,
+        "dropped": 0,
+        "downweighted": 0,
+        "boosted": 0
+      },
+      "results": [
+        {
+          "title": "Online Mermaid Viewer - Live Mermaid Diagram Editor",
+          "url": "https://mermaid-viewer.com/en"
+        },
+        {
+          "title": "Diagram Syntax | Mermaid",
+          "url": "https://mermaid.ai/open-source/intro/syntax-reference.html"
+        },
+        {
+          "title": "Mermaid",
+          "url": "https://mermaid.ai"
+        },
+        {
+          "title": "Flowcharts Syntax | Mermaid",
+          "url": "https://mermaid.js.org/syntax/flowchart.html"
+        },
+        {
+          "title": "Free Online Mermaid Editor — Flowcharts, Sequence Diagrams & More",
+          "url": "https://www.mermaideditor.io"
+        }
+      ]
+    },
+    "on": {
+      "latency_s": 2.86,
+      "relevance": {
+        "enabled": true,
+        "terms": 4,
+        "dropped": 0,
+        "downweighted": 5,
+        "boosted": 0
+      },
+      "results": [
+        {
+          "title": "Online Mermaid Viewer - Live Mermaid Diagram Editor",
+          "url": "https://mermaid-viewer.com/en"
+        },
+        {
+          "title": "Diagram Syntax | Mermaid",
+          "url": "https://mermaid.ai/open-source/intro/syntax-reference.html"
+        },
+        {
+          "title": "Mermaid",
+          "url": "https://mermaid.ai"
+        },
+        {
+          "title": "Flowcharts Syntax | Mermaid",
+          "url": "https://mermaid.js.org/syntax/flowchart.html"
+        },
+        {
+          "title": "Free Online Mermaid Editor — Flowcharts, Sequence Diagrams & More",
+          "url": "https://www.mermaideditor.io"
+        }
+      ]
+    }
+  },
+  "H4": {
+    "query": "苹果公司 最新股价",
+    "kind": "trap",
+    "intent": "Apple公司股票(非水果)",
+    "off": {
+      "latency_s": 2.82,
+      "relevance": {
+        "enabled": false,
+        "terms": 0,
+        "dropped": 0,
+        "downweighted": 0,
+        "boosted": 0
+      },
+      "results": [
+        {
+          "title": "苹果(AAPL)股票最新价格行情,实时走势图,股价分析预测_英为财情Investing.com",
+          "url": "https://cn.investing.com/equities/apple-computer-inc"
+        },
+        {
+          "title": "Apple Inc. (AAPL) 股價、新聞、報價和記錄 - Yahoo 財經",
+          "url": "https://hk.finance.yahoo.com/quote/AAPL"
+        },
+        {
+          "title": "苹果(AAPL)股票股价, 市值, 实时行情, 走势图, 财报",
+          "url": "https://www.moomoo.com/hans/stock/AAPL-US"
+        },
+        {
+          "title": "苹果(AAPL)最新价格_行情_走势图—东方财富网",
+          "url": "http://quote.eastmoney.com/us/AAPL.html?jump_to_web=true"
+        },
+        {
+          "title": "蘋果股票圖表 — NASDAQ:AAPL股票價格 — TradingView",
+          "url": "https://tw.tradingview.com/symbols/NASDAQ-AAPL"
+        }
+      ]
+    },
+    "on": {
+      "latency_s": 1.66,
+      "relevance": {
+        "enabled": true,
+        "terms": 2,
+        "dropped": 2,
+        "downweighted": 0,
+        "boosted": 0
+      },
+      "results": [
+        {
+          "title": "苹果(AAPL)股票最新价格行情,实时走势图,股价分析预测_英为财情Investing.com",
+          "url": "https://cn.investing.com/equities/apple-computer-inc"
+        },
+        {
+          "title": "Apple Inc. (AAPL) 股價、新聞、報價和記錄 - Yahoo 財經",
+          "url": "https://hk.finance.yahoo.com/quote/AAPL"
+        },
+        {
+          "title": "苹果(AAPL)股票股价, 市值, 实时行情, 走势图, 财报",
+          "url": "https://www.moomoo.com/hans/stock/AAPL-US"
+        },
+        {
+          "title": "苹果(AAPL)最新价格_行情_走势图—东方财富网",
+          "url": "http://quote.eastmoney.com/us/AAPL.html?jump_to_web=true"
+        },
+        {
+          "title": "苹果(AAPL)最新价格_行情_走势图-东方财富网",
+          "url": "https://quote.eastmoney.com/us/AAPL.html?date=2026-10-17"
+        }
+      ]
+    }
+  },
+  "H5": {
+    "query": "Rust 安装 教程 windows",
+    "kind": "normal",
+    "intent": "Rust语言Windows安装(测误杀)",
+    "off": {
+      "latency_s": 2.95,
+      "relevance": {
+        "enabled": false,
+        "terms": 0,
+        "dropped": 0,
+        "downweighted": 0,
+        "boosted": 0
+      },
+      "results": [
+        {
+          "title": "安装 Rust - Rust 程序设计语言",
+          "url": "https://rust-lang.org/zh-CN/tools/install"
+        },
+        {
+          "title": "在 Windows 上针对 Rust 设置开发环境 | Microsoft Learn",
+          "url": "https://learn.microsoft.com/zh-cn/windows/dev-environment/rust/setup"
+        },
+        {
+          "title": "How to Install Rust on Windows 11 (2026)",
+          "url": "https://www.youtube.com/watch?v=0D2yL-rG254"
+        },
+        {
+          "title": "Windows 搭建 Rust 开发环境 - 迷途小书童的Note迷途小书童的Note",
+          "url": "https://xugaoxiang.com/2022/11/12/rust-tutorial-1-hello-world"
+        },
+        {
+          "title": "Windows平台Rust开发环境安装与配置指南",
+          "url": "https://blog.csdn.net/weixin_33585822/article/details/164873487"
+        }
+      ]
+    },
+    "on": {
+      "latency_s": 4.31,
+      "relevance": {
+        "enabled": true,
+        "terms": 4,
+        "dropped": 4,
+        "downweighted": 1,
+        "boosted": 0
+      },
+      "results": [
+        {
+          "title": "安装 Rust - Rust 程序设计语言",
+          "url": "https://rust-lang.org/zh-CN/tools/install"
+        },
+        {
+          "title": "在 Windows 上针对 Rust 设置开发环境 | Microsoft Learn",
+          "url": "https://learn.microsoft.com/zh-cn/windows/dev-environment/rust/setup"
+        },
+        {
+          "title": "How to Install Rust on Windows 11 (2026)",
+          "url": "https://www.youtube.com/watch?v=0D2yL-rG254"
+        },
+        {
+          "title": "Windows 搭建 Rust 开发环境 - 迷途小书童的Note迷途小书童的Note",
+          "url": "https://xugaoxiang.com/2022/11/12/rust-tutorial-1-hello-world"
+        },
+        {
+          "title": "Windows平台Rust开发环境安装与配置指南",
+          "url": "https://blog.csdn.net/weixin_33585822/article/details/164873487"
+        }
+      ]
+    }
+  },
+  "H6": {
+    "query": "HTTP 418 status code meaning",
+    "kind": "normal",
+    "intent": "418状态码含义(与E1同族但未见)",
+    "off": {
+      "latency_s": 2.89,
+      "relevance": {
+        "enabled": false,
+        "terms": 0,
+        "dropped": 0,
+        "downweighted": 0,
+        "boosted": 0
+      },
+      "results": [
+        {
+          "title": "418 I'm a teapot - HTTP | MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/418"
+        },
+        {
+          "title": "What is HTTP Status Code 418? - Abstract API",
+          "url": "https://www.abstractapi.com/guides/http-status-codes/418"
+        },
+        {
+          "title": "418 I’m a teapot | HTTP Cats",
+          "url": "https://http.cat/status/418"
+        },
+        {
+          "title": "Today I learned the official HTTP error code 418 means ...",
+          "url": "https://www.reddit.com/r/todayilearned/comments/1bwlnfp/today_i_learned_the_official_http_error_code_418"
+        },
+        {
+          "title": "Hyper Text Coffee Pot Control Protocol",
+          "url": "https://en.wikipedia.org/wiki/Hyper_Text_Coffee_Pot_Control_Protocol"
+        }
+      ]
+    },
+    "on": {
+      "latency_s": 2.3,
+      "relevance": {
+        "enabled": true,
+        "terms": 5,
+        "dropped": 0,
+        "downweighted": 2,
+        "boosted": 0
+      },
+      "results": [
+        {
+          "title": "What is HTTP Status Code 418? - Abstract API",
+          "url": "https://www.abstractapi.com/guides/http-status-codes/418"
+        },
+        {
+          "title": "Today I learned the official HTTP error code 418 means ...",
+          "url": "https://www.reddit.com/r/todayilearned/comments/1bwlnfp/today_i_learned_the_official_http_error_code_418"
+        },
+        {
+          "title": "418 I'm a teapot - HTTP | MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/418"
+        },
+        {
+          "title": "418 I’m a teapot | HTTP Cats",
+          "url": "https://http.cat/status/418"
+        },
+        {
+          "title": "What is 418 Status Code “I'm a Teapot” Error 📖 How To Fix It?",
+          "url": "https://sitechecker.pro/what-is-418-status-code"
+        }
+      ]
+    }
+  },
+  "H7": {
+    "query": "swiftui vs flutter 2026 比较",
+    "kind": "normal",
+    "intent": "框架对比(测误杀)",
+    "off": {
+      "latency_s": 1.88,
+      "relevance": {
+        "enabled": false,
+        "terms": 0,
+        "dropped": 0,
+        "downweighted": 0,
+        "boosted": 0
+      },
+      "results": [
+        {
+          "title": "JetpackCompose vs SwiftUI vs Flutter - Compare Declarative UI Frameworks",
+          "url": "https://www.jetpackcompose.app/compare-declarative-frameworks/JetpackCompose-vs-SwiftUI-vs-Flutter"
+        },
+        {
+          "title": "Expo vs Flutter vs SwiftUI: Which Should You Use in 2026 - Huxly Blog",
+          "url": "https://huxly.app/blog/expo-vs-flutter-vs-swiftui-2026"
+        },
+        {
+          "title": "Flutter for SwiftUI Developers",
+          "url": "https://docs.flutter.dev/flutter-for/swiftui-devs"
+        },
+        {
+          "title": "iOS、Android、Flutter 2026 流行框架对比参考掘金旧文的结构,用 2026 年 6 月最新可核对数据 - 掘金",
+          "url": "https://juejin.cn/post/7648169201848401970"
+        },
+        {
+          "title": "SwiftUI vs Flutter in 2026 | Mital M. | 12 comments",
+          "url": "https://www.linkedin.com/posts/mehta9_swiftui-vs-flutter-in-2026-activity-7472711869699633152-4FEt"
+        }
+      ]
+    },
+    "on": {
+      "latency_s": 2.57,
+      "relevance": {
+        "enabled": true,
+        "terms": 4,
+        "dropped": 0,
+        "downweighted": 1,
+        "boosted": 0
+      },
+      "results": [
+        {
+          "title": "Expo vs Flutter vs SwiftUI: Which Should You Use in 2026 - Huxly Blog",
+          "url": "https://huxly.app/blog/expo-vs-flutter-vs-swiftui-2026"
+        },
+        {
+          "title": "Flutter for SwiftUI Developers",
+          "url": "https://docs.flutter.dev/flutter-for/swiftui-devs"
+        },
+        {
+          "title": "JetpackCompose vs SwiftUI vs Flutter - Compare Declarative UI Frameworks",
+          "url": "https://www.jetpackcompose.app/compare-declarative-frameworks/JetpackCompose-vs-SwiftUI-vs-Flutter"
+        },
+        {
+          "title": "iOS、Android、Flutter 2026 流行框架对比参考掘金旧文的结构,用 2026 年 6 月最新可核对数据 - 掘金",
+          "url": "https://juejin.cn/post/7648169201848401970"
+        },
+        {
+          "title": "SwiftUI vs Flutter in 2026 | Mital M. | 12 comments",
+          "url": "https://www.linkedin.com/posts/mehta9_swiftui-vs-flutter-in-2026-activity-7472711869699633152-4FEt"
+        }
+      ]
+    }
+  },
+  "H8": {
+    "query": "Django 官方文档",
+    "kind": "normal",
+    "intent": "Django官方文档(助推是否泛化到未见站点)",
+    "off": {
+      "latency_s": 2.32,
+      "relevance": {
+        "enabled": false,
+        "terms": 0,
+        "dropped": 0,
+        "downweighted": 0,
+        "boosted": 0
+      },
+      "results": [
+        {
+          "title": "Django Web 框架 (python) - 学习 Web 开发 | MDN",
+          "url": "https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Extensions/Server-side/Django"
+        },
+        {
+          "title": "GitHub - django/django: The Web framework for perfectionists with deadlines. · GitHub",
+          "url": "https://github.com/django/django"
+        },
+        {
+          "title": "Django1.9官方文档_djangopdf资源-CSDN文库",
+          "url": "https://download.csdn.net/detail/allianzcortex/9429120"
+        },
+        {
+          "title": "Django 4.0官方中文文档全解析：从结构到本地构建与避坑",
+          "url": "https://blog.csdn.net/weixin_31412781/article/details/168418207"
+        },
+        {
+          "title": "Django-1.4官方文档(pdf)资源-CSDN文库",
+          "url": "https://download.csdn.net/download/shou1989/5483635"
+        }
+      ]
+    },
+    "on": {
+      "latency_s": 1.81,
+      "relevance": {
+        "enabled": true,
+        "terms": 2,
+        "dropped": 2,
+        "downweighted": 0,
+        "boosted": 8
+      },
+      "results": [
+        {
+          "title": "Django Web 框架 (python) - 学习 Web 开发 | MDN",
+          "url": "https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Extensions/Server-side/Django"
+        },
+        {
+          "title": "GitHub - django/django: The Web framework for perfectionists with deadlines. · GitHub",
+          "url": "https://github.com/django/django"
+        },
+        {
+          "title": "Django1.9官方文档_djangopdf资源-CSDN文库",
+          "url": "https://download.csdn.net/detail/allianzcortex/9429120"
+        },
+        {
+          "title": "Django 4.0官方中文文档全解析：从结构到本地构建与避坑",
+          "url": "https://blog.csdn.net/weixin_31412781/article/details/168418207"
+        },
+        {
+          "title": "Django-1.4官方文档(pdf)资源-CSDN文库",
+          "url": "https://download.csdn.net/download/shou1989/5483635"
+        }
+      ]
+    }
+  }
+}

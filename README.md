@@ -78,6 +78,21 @@ No key ships with this repository — obtain your own: **Bocha** <https://open.b
 - `AGG_ENABLE_<NAME>=0` — force-disable an engine; `AGG_TIMEOUT_S` (20) / `AGG_CONNECT_TIMEOUT_S` (10) / `AGG_UNHEALTHY_TTL_S` (300)
 - `ZHIPU_SEARCH_ENGINE` — `search_std` (default) / `search_pro` / `search_pro_sogou` / `search_pro_quark`
 
+## Evaluation
+
+A frozen 14-query gold set across 5 dimensions (CN/EN freshness, authoritative-source locating, off-topic resistance, precise facts), each result scored 0/1/2 against the built-in WebSearch baseline; plus an 8-query hold-out set (never used for tuning) to check filter over-fitting. Methodology, per-item scoring evidence and raw engine outputs are all kept in [eval/](eval/).
+
+| Metric (v6) | aggregate-search | built-in WebSearch |
+|---|---|---|
+| Gold Hit@5 (11 applicable) | 11/11 | 11/11 |
+| MRR | 0.848 | 1.000 |
+| Junk results (score=0) | 0/70 | 0/62 |
+| Result coverage | 70/70 | 62/70 |
+| Latency | mean 2.7 s / median 2.6 s | not measured |
+
+- v1→v6 evolution (coverage filter → per-engine cap & dedup fixes → semantic re-rank → near-duplicate merge): junk 5/70 → 0/70, Hit@5 10/11 → 11/11 — [eval/report.md](eval/report.md)
+- Hold-out A/B: with the filter on, junk 5/40 → 0/40 and zero false kills on normal queries — [eval/holdout_report.md](eval/holdout_report.md)
+
 ## Repository Layout
 
 ```
@@ -89,6 +104,7 @@ aggregate_search/
   orchestrator.py      parallel dispatch, health blacklist, failure taxonomy, proxy probing
   engines/             per-engine adapters (add file + register in config.SPECS)
 tests/                 35 mocked tests (fusion / engines / orchestrator / failures)
+eval/                  frozen gold set, per-version scores, hold-out report, raw outputs
 verify_e2e.py          stdio E2E via a real MCP client
 real_check.py          live-key verification (spends quota, prints failure kinds)
 HANDOFF_接管诊断.md     engineering diagnosis report (CN)

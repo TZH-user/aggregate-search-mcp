@@ -1,0 +1,93 @@
+{
+  "query_id": "A3",
+  "query": "iPhone 18 发布",
+  "latency_s": 2.73,
+  "engines_used": [
+    "bocha",
+    "tavily",
+    "serper"
+  ],
+  "engines_failed": [],
+  "engine_errors": {},
+  "relevance": {
+    "enabled": true,
+    "terms": 3,
+    "dropped": 0,
+    "downweighted": 0,
+    "boosted": 0,
+    "dropped_items": [],
+    "downweighted_items": [],
+    "domain_rules": {
+      "blocked": 0,
+      "boosted": 0,
+      "blocked_items": [],
+      "boosted_items": []
+    },
+    "rerank": {
+      "modes": [
+        "embedding"
+      ],
+      "embedding": {
+        "enabled": true,
+        "embedded": 19,
+        "error": null,
+        "sim_min": 0.5435,
+        "sim_max": 0.7058
+      },
+      "llm": null
+    }
+  },
+  "results": [
+    {
+      "title": "Apple 发布 iPhone 18 Pro 与 iPhone 18 Pro Max - Apple (中国大陆)",
+      "url": "https://www.apple.com.cn/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max",
+      "snippet": "iPhone 18 Pro Max 提供256GB、512GB、1TB … 售价为RMB 10,999。 43 小时。iPhone 18 Pro 只需约15 分钟即可充至最高50% 电量",
+      "published_date": "Sep 9, 2026",
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "iPhone 18何時上市？價格、規格、顏色與延後原因整理",
+      "url": "https://www.landtop.com.tw/reviews/541",
+      "snippet": "快速答案：標準版iPhone 18上市日期尚未公布，市場預期為2027年春季。iPhone 18 Pro系列則已確定於2026年9月12日晚上8點開放預訂、9月18日開賣；iPhone ...",
+      "published_date": "Sep 10, 2026",
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "iPhone Duo、iPhone 18 Pro 即将发布，苹果在线商店下线维护 - IT之家",
+      "url": "https://www.ithome.com/1/000/400.htm",
+      "snippet": "标准版iPhone 18 与iPhone Air 2 不会在本次发布会亮相。苹果调整了产品发布节奏，入门款iPhone 不再于秋季发布，预计推迟到次年春季上市。在此之前，苹果 ...",
+      "published_date": "Sep 9, 2026",
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "iPhone 18",
+      "url": "https://baike.baidu.com/item/iPhone%2018/66937148",
+      "snippet": "iPhone 18是苹果公司于2026年9月发布的智能手机产品线,包含iPhone 18 Pro、iPhone 18 Pro Max、iPhone 18及iPhone 18e。 迟至2027年春季发布。",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "iPhone 18 蘋果產品發表會中文翻譯直播",
+      "url": "https://www.youtube.com/watch?v=mNAdnTt7VxI",
+      "snippet": "本次直播主題為2026 的秋季新品發表會中文轉播，0:00 為粉絲會前討論會，01:00 正式開始發表會轉播。內容將會發表iPhone 18 ... iPhone 18 蘋果產品發表會 ...",
+      "published_date": "1 month ago",
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    }
+  ],
+  "error": null
+}

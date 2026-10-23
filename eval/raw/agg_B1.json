@@ -1,0 +1,93 @@
+{
+  "query_id": "B1",
+  "query": "Model Context Protocol official specification",
+  "latency_s": 2.77,
+  "engines_used": [
+    "bocha",
+    "tavily",
+    "serper"
+  ],
+  "engines_failed": [],
+  "engine_errors": {},
+  "relevance": {
+    "enabled": true,
+    "terms": 3,
+    "dropped": 0,
+    "downweighted": 0,
+    "boosted": 4,
+    "dropped_items": [],
+    "downweighted_items": [],
+    "domain_rules": {
+      "blocked": 0,
+      "boosted": 0,
+      "blocked_items": [],
+      "boosted_items": []
+    },
+    "rerank": {
+      "modes": [
+        "embedding"
+      ],
+      "embedding": {
+        "enabled": true,
+        "embedded": 19,
+        "error": null,
+        "sim_min": 0.5933,
+        "sim_max": 0.7159
+      },
+      "llm": null
+    }
+  },
+  "results": [
+    {
+      "title": "Specification – Model Context Protocol （MCP）",
+      "url": "https://modelcontextprotocol.info/specification",
+      "snippet": "The Model Context Protocol (MCP) is an open protocol that enables seamless integration between LLM applications and external data sources and tools.",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "Specification - Model Context Protocol",
+      "url": "https://modelcontextprotocol.io/specification/2025-06-18",
+      "snippet": "Model Context Protocol (MCP) is an open protocol that enables seamless integration between LLM applications and external data sources and tools.",
+      "published_date": "Jun 18, 2025",
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "GitHub - modelcontextprotocol/modelcontextprotocol: Specification and documentation for the Model Context Protocol · GitHub",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol",
+      "snippet": "Specification and documentation for the Model Context Protocol. The official MCP documentation is built using Mintlify and available at modelcontextprotocol.io.",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "A Complete Guide to the Model Context Protocol | Bolder Apps Blog",
+      "url": "https://www.bolderapps.com/blog-posts/model-context-protocol",
+      "snippet": "Model Context Protocol is a standardized communication specification designed to bridge the gap between large language models (LLMs) and the ...",
+      "published_date": "Jun 9, 2026",
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "Anthropic Publishes Model Context Protocol Specification for LLM App Integration - InfoQ",
+      "url": "https://www.infoq.com/news/2024/12/anthropic-model-context-protocol",
+      "snippet": "Anthropic recently released their Model Context Protocol (MCP), an open standard describing a protocol for integrating external resources ...",
+      "published_date": "Dec 24, 2024",
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    }
+  ],
+  "error": null
+}

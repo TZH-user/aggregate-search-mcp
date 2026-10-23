@@ -1,0 +1,93 @@
+{
+  "query_id": "B3",
+  "query": "Python asyncio official documentation",
+  "latency_s": 2.32,
+  "engines_used": [
+    "bocha",
+    "tavily",
+    "serper"
+  ],
+  "engines_failed": [],
+  "engine_errors": {},
+  "relevance": {
+    "enabled": true,
+    "terms": 2,
+    "dropped": 0,
+    "downweighted": 0,
+    "boosted": 5,
+    "dropped_items": [],
+    "downweighted_items": [],
+    "domain_rules": {
+      "blocked": 0,
+      "boosted": 0,
+      "blocked_items": [],
+      "boosted_items": []
+    },
+    "rerank": {
+      "modes": [
+        "embedding"
+      ],
+      "embedding": {
+        "enabled": true,
+        "embedded": 17,
+        "error": null,
+        "sim_min": 0.534,
+        "sim_max": 0.7511
+      },
+      "llm": null
+    }
+  },
+  "results": [
+    {
+      "title": "asyncio — Asynchronous I/O — Python 3.15.1 documentation",
+      "url": "https://docs.python.org/3/library/asyncio.html",
+      "snippet": "asyncio is a library to write concurrent code using the async/await syntax. asyncio is used as a foundation for multiple Python asynchronous frameworks that ...",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "Asyncio support - python-can 4.6.1 documentation",
+      "url": "https://python-can.readthedocs.io/en/stable/asyncio.html",
+      "snippet": "The asyncio module built into Python 3.4 and later can be used to write asynchronous code in a single thread. This library supports receiving messages ...",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "A conceptual overview of asyncio — Python 3.15.1 documentation",
+      "url": "https://docs.python.org/3/howto/a-conceptual-overview-of-asyncio.html",
+      "snippet": "This HOWTO article seeks to help you build a sturdy mental model of how asyncio fundamentally works, helping you understand the how and why behind the ...",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "Python Asyncio Part 1 – Basic Concepts and Patterns | cloudfit-public-docs",
+      "url": "https://bbc.github.io/cloudfit-public-docs/asyncio/asyncio-part-1.html",
+      "snippet": "This post is going to go over the basic concepts behind asyncio without going into implementation details.",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "Python asyncio Module",
+      "url": "https://www.w3schools.com/python/ref_module_asyncio.asp",
+      "snippet": "The asyncio module provides an event loop, tasks, and I/O primitives for concurrent code. Use async / await to write structured asynchronous programs, schedule ...",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    }
+  ],
+  "error": null
+}

@@ -1,0 +1,153 @@
+{
+  "_meta": {
+    "tool": "ZCode 内置 WebSearch (Z.ai web_search_prime)",
+    "collected": "2026-10-23",
+    "note": "links 字段按内置工具给出的顺序取前 5;A2/C1/C3/E1 当次 Links 列表为空,取摘要正文列出的 URL 顺序。摘要事实字段 summary_fact 记录综合摘要中给出的可核对事实。"
+  },
+  "A1": {
+    "query": "智谱 GLM 最新模型 发布",
+    "results": [
+      {"title": "GLM-5.3 说明", "url": "https://docs.bigmodel.cn/cn/guide/models/text/glm-5.3"},
+      {"title": "华尔街见闻报道", "url": "https://wallstreetcn.com/articles/3779432"},
+      {"title": "智谱AI官网", "url": "https://www.zhipuai.cn/zh"},
+      {"title": "BigModel 平台", "url": "https://bigmodel.cn"},
+      {"title": "模型与产品发布记录", "url": "https://docs.bigmodel.cn/cn/update/new-releases"}
+    ],
+    "summary_fact": "GLM-5.3 于 2026-08-14 发布"
+  },
+  "A2": {
+    "query": "2026年 诺贝尔文学奖 得主",
+    "results": [
+      {"title": "加拿大诗人安妮·卡森获2026年诺贝尔文学奖(RFI,2026-10-08)", "url": "https://www.rfi.fr/cn/国际/20261008-加拿大诗人安妮·卡森获2026年诺贝尔文学奖"}
+    ],
+    "summary_fact": "2026年诺贝尔文学奖得主:安妮·卡森(加拿大诗人),2026-10-08 公布;摘要另提及美国之音/凤凰网/新浪/腾讯等来源"
+  },
+  "A3": {
+    "query": "iPhone 18 发布",
+    "results": [
+      {"title": "Apple 发布 iPhone 18 Pro 与 iPhone 18 Pro Max(官方 Newsroom)", "url": "https://www.apple.com.cn/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max"},
+      {"title": "iPhone 18 Pro / Pro Max / Duo 懒人包", "url": "https://hipporizz.com.tw/blogs/all/iphone-18"},
+      {"title": "百度百科:iPhone 18", "url": "https://baike.baidu.com/item/iPhone 18/66937148"},
+      {"title": "iPhone 18 上市时间与延后原因整理", "url": "https://www.landtop.com.tw/reviews/541"},
+      {"title": "iPhone 18 延期至 2027 年(知乎)", "url": "https://zhuanlan.zhihu.com/p/1990415102583788160"}
+    ],
+    "summary_fact": "iPhone 18 系列于 2026-09-09 发布(iPhone Duo 折叠屏同场,标准版/Air 2 延期至 2027 春)"
+  },
+  "B1": {
+    "query": "Model Context Protocol official specification",
+    "results": [
+      {"title": "Specification (2025-06-18)", "url": "https://modelcontextprotocol.io/specification/2025-06-18"},
+      {"title": "MCP GitHub Organization", "url": "https://github.com/modelcontextprotocol"},
+      {"title": "Specification Repository", "url": "https://github.com/modelcontextprotocol/modelcontextprotocol"},
+      {"title": "Anthropic's Announcement", "url": "https://www.anthropic.com/news/model-context-protocol"},
+      {"title": "Specification 2025-11-25 (authorization)", "url": "https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization"}
+    ],
+    "summary_fact": "官方规范站为 modelcontextprotocol.io,另有 2026-07-28 新版规范"
+  },
+  "B2": {
+    "query": "FastAPI official documentation",
+    "results": [
+      {"title": "FastAPI – Official Website", "url": "https://fastapi.tiangolo.com"},
+      {"title": "FastAPI GitHub Organization", "url": "https://github.com/fastapi"},
+      {"title": "FastAPI Tutorial – Read the Docs", "url": "https://fastapi-tutorial.readthedocs.io"},
+      {"title": "Introduction to FastAPI – GeeksforGeeks", "url": "https://www.geeksforgeeks.org/python/introduction-to-fastapi"},
+      {"title": "Beginner-Friendly Guide to FastAPI – Reddit", "url": "https://www.reddit.com/r/FastAPI/comments/1lz0w1w/beginnerfriendly_guide_to_fastapi_with_code"}
+    ],
+    "summary_fact": null
+  },
+  "B3": {
+    "query": "Python asyncio official documentation",
+    "results": [
+      {"title": "asyncio — Asynchronous I/O(官方文档)", "url": "https://docs.python.org/3/library/asyncio.html"},
+      {"title": "A conceptual overview of asyncio(官方 HOWTO)", "url": "https://docs.python.org/3/howto/a-conceptual-overview-of-asyncio.html"},
+      {"title": "Asyncio support — python-can docs", "url": "https://python-can.readthedocs.io/en/stable/asyncio.html"},
+      {"title": "Python asyncio Module — W3Schools", "url": "https://www.w3schools.com/python/ref_module_asyncio.asp"},
+      {"title": "Python's asyncio: A Hands-On Walkthrough — Real Python", "url": "https://realpython.com/async-io-python"}
+    ],
+    "summary_fact": null
+  },
+  "C1": {
+    "query": "智谱开放平台 API 文档",
+    "results": [
+      {"title": "智谱AI开放平台 API 文档", "url": "https://open.bigmodel.cn/doc/api"},
+      {"title": "智谱AI开放文档中心", "url": "https://docs.bigmodel.cn"},
+      {"title": "LangChain 集成指南", "url": "https://docs.bigmodel.cn/cn/guide/develop/langchain/introduction"},
+      {"title": "AutoGLM-OpenClaw 文档", "url": "https://docs.bigmodel.cn/cn/coding-plan/benefits/autoglm-openclaw"},
+      {"title": "智谱AI官网", "url": "https://www.zhipuai.cn/zh"}
+    ],
+    "summary_fact": null
+  },
+  "C2": {
+    "query": "博查搜索 Bocha AI API 官网",
+    "results": [
+      {"title": "博查AI开放平台(Web Search API / Reranker API)", "url": "https://open.bochaai.com"},
+      {"title": "博查AI搜索(C端产品)", "url": "https://bocha.cn"},
+      {"title": "bocha-search-mcp(GitHub)", "url": "https://github.com/bochaai/bocha-search-mcp"},
+      {"title": "博查服务协议", "url": "https://open.bochaai.com/terms-of-service"},
+      {"title": "阿里云市场:博查搜索API", "url": "https://market.aliyun.com/detail/cmapi00069848"}
+    ],
+    "summary_fact": null
+  },
+  "C3": {
+    "query": "Rust 编程语言 官网",
+    "results": [
+      {"title": "Rust Programming Language(官网)", "url": "https://rust-lang.org"},
+      {"title": "Rust (programming language) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Rust_(programming_language)"},
+      {"title": "《Rust 程序设计语言》简体中文版", "url": "https://kaisery.github.io/trpl-zh-cn"},
+      {"title": "Rust 文档网(中文)", "url": "https://rustwiki.org"},
+      {"title": "Rust 官方 GitHub 组织", "url": "https://github.com/rust-lang"}
+    ],
+    "summary_fact": "官网为 www.rust-lang.org"
+  },
+  "D1": {
+    "query": "Model Context Protocol news October 2026",
+    "results": [
+      {"title": "Notified Opens MCP Beta Program(GlobeNewswire,2026-10-21)", "url": "https://www.globenewswire.com/news-release/2026/10/21/3385795/0/en/notified-opens-model-context-protocol-mcp-beta-program-for-pr-and-ir-data-and-services.html"},
+      {"title": "The 2026-07-28 Specification(官方博客)", "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28"},
+      {"title": "MCP is going stateless(InfoWorld,2026-07-24)", "url": "https://www.infoworld.com/article/4201254/model-context-protocol-is-going-stateless-to-make-scaling-simpler.html"},
+      {"title": "State of MCP in Software 2026(Stacklok)", "url": "https://stacklok.com/resources/state-of-mcp-in-software-2026"},
+      {"title": "Why MCP is suddenly on every executive agenda(CIO)", "url": "https://www.cio.com/article/4136548/why-model-context-protocol-is-suddenly-on-every-executive-agenda.html"}
+    ],
+    "summary_fact": null
+  },
+  "D2": {
+    "query": "Java island travel guide",
+    "results": [
+      {"title": "Java Travel Guide | Your 1–2 Week Route In The Island", "url": "https://www.indietraveller.co/java-travel-guide"},
+      {"title": "Java | Indonesia Travel Guide – Rough Guides", "url": "https://www.roughguides.com/indonesia/java"},
+      {"title": "Your complete guide to Java(Reddit)", "url": "https://www.reddit.com/r/Travel_World_Now/comments/1sbhkys/your_complete_guide_to_java_indonesias_wild"},
+      {"title": "Java travel guide – Responsible Travel", "url": "https://www.responsiblevacation.com/vacations/java/travel-guide"},
+      {"title": "9-Day Java Itinerary – Lonely Planet", "url": "https://www.lonelyplanet.com/articles/java-itinerary"}
+    ],
+    "summary_fact": null
+  },
+  "D3": {
+    "query": "Apple fruit nutrition facts",
+    "results": [
+      {"title": "Apples 101: Nutrition Facts and Health Benefits — Healthline", "url": "https://www.healthline.com/nutrition/foods/apples"},
+      {"title": "The Nutrition Source: Apples — Harvard T.H. Chan", "url": "https://nutritionsource.hsph.harvard.edu/food-features/apples"},
+      {"title": "Apples — USDA SNAP-Ed", "url": "https://snaped.fna.usda.gov/resources/nutrition-education-materials/seasonal-produce-guide/apples"}
+    ],
+    "summary_fact": "营养数据来自 Healthline/Harvard/USDA,均关于苹果水果"
+  },
+  "E1": {
+    "query": "HTTP 451 status code meaning",
+    "results": [
+      {"title": "RFC 7725", "url": "https://www.rfc-editor.org/info/rfc7725"},
+      {"title": "HTTP 451 — Wikipedia", "url": "https://en.wikipedia.org/wiki/HTTP_451"},
+      {"title": "451 Unavailable For Legal Reasons — MDN", "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/451"}
+    ],
+    "summary_fact": "451 = Unavailable For Legal Reasons(因法律原因不可用),RFC 7725"
+  },
+  "E2": {
+    "query": "reciprocal rank fusion RRF formula",
+    "results": [
+      {"title": "Reciprocal Rank Fusion (RRF) explained — Medium", "url": "https://medium.com/@devalshah1619/mathematical-intuition-behind-reciprocal-rank-fusion-rrf-explained-in-2-mins-002df0cc5e2a"},
+      {"title": "Reciprocal rank fusion — Elasticsearch docs", "url": "https://www.elastic.co/docs/reference/elasticsearch/rest-apis/reciprocal-rank-fusion"},
+      {"title": "Introducing Reciprocal Rank Fusion — OpenSearch blog", "url": "https://opensearch.org/blog/introducing-reciprocal-rank-fusion-hybrid-search"},
+      {"title": "Reciprocal Rank Fusion — ParadeDB", "url": "https://www.paradedb.com/learn/search-concepts/reciprocal-rank-fusion"},
+      {"title": "Reciprocal Rank Fusion — MongoDB", "url": "https://www.mongodb.com/resources/basics/reciprocal-rank-fusion"}
+    ],
+    "summary_fact": "公式 RRF(d)=Σ 1/(k+r(d)),k 常取 60"
+  }
+}

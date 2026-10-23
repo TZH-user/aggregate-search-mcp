@@ -1,0 +1,101 @@
+{
+  "query_id": "E1",
+  "query": "HTTP 451 status code meaning",
+  "latency_s": 2.58,
+  "engines_used": [
+    "bocha",
+    "tavily",
+    "serper"
+  ],
+  "engines_failed": [],
+  "engine_errors": {},
+  "relevance": {
+    "enabled": true,
+    "terms": 5,
+    "dropped": 0,
+    "downweighted": 2,
+    "boosted": 0,
+    "dropped_items": [],
+    "downweighted_items": [
+      {
+        "title": "Company, Investor & Fund Profiles (Free Previews) | PitchBoo",
+        "url": "https://pitchbook.com/profiles/search?q=Envestnet+%7C+Tamarac"
+      },
+      {
+        "title": "HTTP协议中几个状态码的含义:503 500 401 403 404 200 301 302。。。 - 星云惊蛰 - ",
+        "url": "https://www.cnblogs.com/jzxy/articles/10037903.html"
+      }
+    ],
+    "domain_rules": {
+      "blocked": 0,
+      "boosted": 0,
+      "blocked_items": [],
+      "boosted_items": []
+    },
+    "rerank": {
+      "modes": [
+        "embedding"
+      ],
+      "embedding": {
+        "enabled": true,
+        "embedded": 19,
+        "error": null,
+        "sim_min": 0.1815,
+        "sim_max": 0.6461
+      },
+      "llm": null
+    }
+  },
+  "results": [
+    {
+      "title": "RFC 7725: An HTTP Status Code to Report Legal Obstacles | RFC Editor",
+      "url": "https://www.rfc-editor.org/info/rfc7725",
+      "snippet": "451 Unavailable For Legal Reasons This status code indicates that the server is denying access to the resource as a consequence of a legal demand.",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "451 Unavailable For Legal Reasons - HTTP status code explained",
+      "url": "https://http.dev/451",
+      "snippet": "Legal demands preventing access to requested content are communicated through the 451 Unavailable For Legal Reasons status code.",
+      "published_date": "Aug 11, 2026",
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "451 Unavailable For Legal Reasons - HTTP | MDN",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/451",
+      "snippet": "status code indicates that the user requested a resource that is not available due to legal reasons, such as a web page for which a legal ...",
+      "published_date": "Jul 4, 2025",
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "How To Fix or Bypass Error 451: Unavailable Due to Legal Reasons",
+      "url": "https://www.youtube.com/watch?v=n9CsUK7B0X0",
+      "snippet": "Error 451: Unavailable Due to … this error message indicates that the website owner or your local government/authority has blocked access to ...",
+      "published_date": "4 years ago",
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "HTTP 451",
+      "url": "https://en.wikipedia.org/wiki/HTTP_451",
+      "snippet": "HTTP 451 Unavailable For Legal Reasons is a response status code that indicates that a request cannot be satisfied for legal reasons, such as a web page ...",
+      "published_date": null,
+      "engines": [
+        "serper"
+      ]
+    }
+  ],
+  "error": null
+}

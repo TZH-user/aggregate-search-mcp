@@ -1,0 +1,242 @@
+{
+  "H1": {
+    "query": "Transformers movie 2026 box office",
+    "kind": "trap",
+    "intent": "变形金刚电影(非ML transformer论文)",
+    "rerank": {
+      "latency_s": 4.32,
+      "results": [
+        {
+          "title": "The Transformers: The Movie 40th Anniversary - Box Office Mojo",
+          "url": "https://www.boxofficemojo.com/release/rl190021889"
+        },
+        {
+          "title": "Transformers The Movie: 40th Rerelease Extends Run With Big Box Office",
+          "url": "https://www.hollywoodreporter.com/movies/movie-news/transformers-the-movie-40th-rerelease-extends-box-office-1236709056"
+        },
+        {
+          "title": "Transformers Franchise Box Office History - The Numbers",
+          "url": "https://www.the-numbers.com/movies/franchise/Transformers"
+        },
+        {
+          "title": "Transformers: The Movie grosses over $10 million at ...",
+          "url": "https://www.facebook.com/BotConOfficial/posts/it-may-have-taken-40-years-but-transformers-the-movie-has-now-grossed-over-10-mi/1519323333553073"
+        },
+        {
+          "title": "Transformers: The Movie grossed $1 million on Thursday ...",
+          "url": "https://www.reddit.com/r/boxoffice/comments/1wk23ct/transformers_the_movie_grossed_1_million_on"
+        }
+      ]
+    }
+  },
+  "H2": {
+    "query": "Go board game rules beginners",
+    "kind": "trap",
+    "intent": "围棋规则(非golang)",
+    "rerank": {
+      "latency_s": 3.19,
+      "results": [
+        {
+          "title": "How To Play Go (Beginner Tutorial)",
+          "url": "https://www.youtube.com/watch?v=cFVM_hwh56s"
+        },
+        {
+          "title": "A Simple Beginner’s Guide to Go",
+          "url": "https://www.nordicgodojo.eu/post/212/a-simple-beginners-guide-to-go"
+        },
+        {
+          "title": "The simplest and most concise rules of Go I could come up ...",
+          "url": "https://www.reddit.com/r/baduk/comments/1k4k7h7/the_simplest_and_most_concise_rules_of_go_i_could"
+        },
+        {
+          "title": "Rules of Go - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Rules_of_Go"
+        },
+        {
+          "title": "Learn to play Go",
+          "url": "https://online-go.com/learn-to-play-go"
+        }
+      ]
+    }
+  },
+  "H3": {
+    "query": "mermaid diagram syntax tutorial",
+    "kind": "trap",
+    "intent": "mermaid图表工具(非神话/电影)",
+    "rerank": {
+      "latency_s": 3.25,
+      "results": [
+        {
+          "title": "Diagram Syntax | Mermaid",
+          "url": "https://mermaid.ai/open-source/intro/syntax-reference.html"
+        },
+        {
+          "title": "Diagram Syntax | Mermaid",
+          "url": "https://emersonbottero.github.io/mermaid-docs/intro/n00b-syntaxReference.html"
+        },
+        {
+          "title": "Creating Mermaid Diagrams",
+          "url": "https://docs.readme.com/main/docs/creating-mermaid-diagrams"
+        },
+        {
+          "title": "What syntax can I use to diagram as code with Mermaid? | Community",
+          "url": "https://community.lucid.co/inspiration-5/what-syntax-can-i-use-to-diagram-as-code-with-mermaid-9665"
+        },
+        {
+          "title": "Flowcharts Syntax | Mermaid",
+          "url": "https://mermaid.js.org/syntax/flowchart.html"
+        }
+      ]
+    }
+  },
+  "H4": {
+    "query": "苹果公司 最新股价",
+    "kind": "trap",
+    "intent": "Apple公司股票(非水果)",
+    "rerank": {
+      "latency_s": 3.55,
+      "results": [
+        {
+          "title": "苹果(AAPL)股票最新价格行情,实时走势图,股价分析预测_英为财情Investing.com",
+          "url": "https://cn.investing.com/equities/apple-computer-inc"
+        },
+        {
+          "title": "苹果(AAPL)股票股价, 市值, 实时行情, 走势图, 财报",
+          "url": "https://www.moomoo.com/hans/stock/AAPL-US"
+        },
+        {
+          "title": "Apple Inc. (AAPL) 股價、新聞、報價和記錄 - Yahoo 財經",
+          "url": "https://hk.finance.yahoo.com/quote/AAPL"
+        },
+        {
+          "title": "苹果(AAPL)最新价格_行情_走势图-东方财富网",
+          "url": "https://quote.eastmoney.com/us/AAPL.html?date=2026-10-17"
+        },
+        {
+          "title": "苹果(AAPL)最新价格_行情_走势图-东方财富网",
+          "url": "https://quote.eastmoney.com/us/AAPL.html?date=2026-10-20"
+        }
+      ]
+    }
+  },
+  "H5": {
+    "query": "Rust 安装 教程 windows",
+    "kind": "normal",
+    "intent": "Rust语言Windows安装(测误杀)",
+    "rerank": {
+      "latency_s": 8.64,
+      "results": [
+        {
+          "title": "Rust 语言环境安装:Windows 开发环境  Rust 技术论坛",
+          "url": "https://learnku.com/rust/wikis/29017"
+        },
+        {
+          "title": "安装 Rust - Rust 程序设计语言",
+          "url": "https://rust-lang.org/zh-CN/tools/install"
+        },
+        {
+          "title": "Rust - 安装（Windows）_rust windows-CSDN博客",
+          "url": "https://blog.csdn.net/jiang1126/article/details/135268741"
+        },
+        {
+          "title": "在 Windows 上针对 Rust 设置开发环境 | Microsoft Learn",
+          "url": "https://learn.microsoft.com/zh-cn/windows/dev-environment/rust/setup"
+        },
+        {
+          "title": "Install Rust - Rust Programming Language",
+          "url": "https://rust-lang.org/install.html"
+        }
+      ]
+    }
+  },
+  "H6": {
+    "query": "HTTP 418 status code meaning",
+    "kind": "normal",
+    "intent": "418状态码含义(与E1同族但未见)",
+    "rerank": {
+      "latency_s": 2.92,
+      "results": [
+        {
+          "title": "What is HTTP Status Code 418? - Abstract API",
+          "url": "https://www.abstractapi.com/guides/http-status-codes/418"
+        },
+        {
+          "title": "418 I'm a teapot - HTTP | MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/418"
+        },
+        {
+          "title": "418 I’m a teapot | HTTP Cats",
+          "url": "https://http.cat/status/418"
+        },
+        {
+          "title": "Daily Challenge - Fun Friday: HTTP 418 - 2024-Dec-06 - Daily Challenge - Spiceworks Community",
+          "url": "https://community.spiceworks.com/t/daily-challenge-fun-friday-http-418-2024-dec-06/1150612"
+        },
+        {
+          "title": "Today I learned the official HTTP error code 418 means ...",
+          "url": "https://www.reddit.com/r/todayilearned/comments/1bwlnfp/today_i_learned_the_official_http_error_code_418"
+        }
+      ]
+    }
+  },
+  "H7": {
+    "query": "swiftui vs flutter 2026 比较",
+    "kind": "normal",
+    "intent": "框架对比(测误杀)",
+    "rerank": {
+      "latency_s": 5.25,
+      "results": [
+        {
+          "title": "Expo vs Flutter vs SwiftUI: Which Should You Use in 2026 - Huxly Blog",
+          "url": "https://huxly.app/blog/expo-vs-flutter-vs-swiftui-2026"
+        },
+        {
+          "title": "JetpackCompose vs SwiftUI vs Flutter - Compare Declarative UI Frameworks",
+          "url": "https://www.jetpackcompose.app/compare-declarative-frameworks/JetpackCompose-vs-SwiftUI-vs-Flutter"
+        },
+        {
+          "title": "Flutter for SwiftUI Developers",
+          "url": "https://docs.flutter.dev/flutter-for/swiftui-devs"
+        },
+        {
+          "title": "iOS、Android、Flutter 2026 流行框架对比参考掘金旧文的结构,用 2026 年 6 月最新可核对数据 - 掘金",
+          "url": "https://juejin.cn/post/7648169201848401970"
+        },
+        {
+          "title": "SwiftUI vs Flutter in 2026 | Mital M. | 12 comments",
+          "url": "https://www.linkedin.com/posts/mehta9_swiftui-vs-flutter-in-2026-activity-7472711869699633152-4FEt"
+        }
+      ]
+    }
+  },
+  "H8": {
+    "query": "Django 官方文档",
+    "kind": "normal",
+    "intent": "Django官方文档(助推是否泛化到未见站点)",
+    "rerank": {
+      "latency_s": 2.43,
+      "results": [
+        {
+          "title": "Django 文档 | Django 文档 | Django",
+          "url": "https://docs.djangoproject.com/zh-hans/6.1"
+        },
+        {
+          "title": "Django 中文网 官网",
+          "url": "https://django.p2hp.com"
+        },
+        {
+          "title": "Django documentation | Django documentation | Django",
+          "url": "https://docs.djangoproject.com"
+        },
+        {
+          "title": "The web framework for perfectionists with deadlines | Django",
+          "url": "https://www.djangoproject.com"
+        },
+        {
+          "title": "Django REST framework",
+          "url": "https://www.django-rest-framework.org"
+        }
+      ]
+    }
+  }
+}

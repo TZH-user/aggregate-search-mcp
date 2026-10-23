@@ -50,6 +50,21 @@
 5. **重启客户端**,对话里说"搜一下 XXX"即可触发 `web_search`;
    排查问题先调 `engine_status` 看 key 配置、健康状态与出网代理。
 
+## 评测
+
+冻结的 14 题金标准,覆盖 5 个方向(中/英时效、权威源定位、跑题抵抗、精确事实),逐条 0/1/2 判分,与内置 WebSearch 对比;另设 8 题保留集(不参与任何调参)检验过滤器过拟合。方法、逐题判分 evidence 与原始引擎输出全部落盘在 [eval/](eval/)。
+
+| 指标(v6) | aggregate-search | 内置 WebSearch |
+|---|---|---|
+| 金标 Hit@5(11 题适用) | 11/11 | 11/11 |
+| MRR | 0.848 | 1.000 |
+| 垃圾条数(得分 0) | 0/70 | 0/62 |
+| 结果条数覆盖 | 70/70 | 62/70 |
+| 延迟 | 均值 2.7s / 中位 2.6s | 未测 |
+
+- v1→v6 演进(覆盖率过滤→限条+去重修复→语义重排→近重复合并):垃圾 5/70→0/70,Hit@5 10/11→11/11,见 [eval/report.md](eval/report.md)
+- 保留集 A/B:过滤器开启后垃圾 5/40→0/40、普通查询零误杀,见 [eval/holdout_report.md](eval/holdout_report.md)
+
 ## 目录结构
 
 ```
@@ -61,6 +76,7 @@ aggregate_search/
   orchestrator.py         并行调度、健康黑名单、失败分类、出网代理探测
   engines/                各引擎适配器(新增引擎:加一个文件 + 在 config.SPECS 注册)
 tests/                    35 个 mock 测试(fusion / engines / orchestrator / 失败分类)
+eval/                     冻结金标准、逐版本判分、保留集报告、原始引擎输出
 verify_e2e.py             用 MCP stdio 客户端真实连接 server 的端到端验证
 real_check.py             真实 key 全链路验证(消耗额度,输出失败分类)
 HANDOFF_接管诊断.md        工程接管诊断报告

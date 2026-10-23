@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "created": "2026-10-23",
+    "top_k": 5,
+    "per_engine": 8,
+    "tools": ["websearch_builtin", "aggregate_search"],
+    "rubric": {
+      "2": "直接回答查询意图",
+      "1": "同主题相关但不直接回答",
+      "0": "跑题/错实体"
+    }
+  },
+  "queries": [
+    {"id": "A1", "direction": "zh_recency", "query": "智谱 GLM 最新模型 发布", "intent": "智谱当前最新模型及发布时间", "gold_type": "fact", "gold": "GLM-5.3", "gold_note": "2026-08发布,财新/东财/腾讯多源一致(10-23实测)"},
+    {"id": "A2", "direction": "zh_recency", "query": "2026年 诺贝尔文学奖 得主", "intent": "2026年文学奖得主姓名", "gold_type": "fact_consistency", "gold": null, "gold_note": ">=2条独立来源一致的姓名,判分留证"},
+    {"id": "A3", "direction": "zh_recency", "query": "iPhone 18 发布", "intent": "iPhone 18发布时间", "gold_type": "fact_consistency", "gold": "2026年9月", "gold_note": ">=2条独立来源一致"},
+    {"id": "B1", "direction": "en_authority", "query": "Model Context Protocol official specification", "intent": "MCP官方规范", "gold_type": "domain", "gold": "modelcontextprotocol.io"},
+    {"id": "B2", "direction": "en_authority", "query": "FastAPI official documentation", "intent": "FastAPI官方文档", "gold_type": "domain", "gold": "fastapi.tiangolo.com"},
+    {"id": "B3", "direction": "en_authority", "query": "Python asyncio official documentation", "intent": "asyncio官方文档", "gold_type": "domain", "gold": "docs.python.org"},
+    {"id": "C1", "direction": "zh_authority", "query": "智谱开放平台 API 文档", "intent": "智谱开放平台文档站", "gold_type": "domain", "gold": "bigmodel.cn"},
+    {"id": "C2", "direction": "zh_authority", "query": "博查搜索 Bocha AI API 官网", "intent": "博查官网", "gold_type": "domain", "gold": "bochaai.com"},
+    {"id": "C3", "direction": "zh_authority", "query": "Rust 编程语言 官网", "intent": "Rust官网", "gold_type": "domain", "gold": "rust-lang.org", "gold_alt": ["rustlang.org"]},
+    {"id": "D1", "direction": "noise_resist", "query": "Model Context Protocol news October 2026", "intent": "MCP协议相关新闻", "gold_type": "junk_count", "gold": null},
+    {"id": "D2", "direction": "noise_resist", "query": "Java island travel guide", "intent": "爪哇岛旅游", "gold_type": "junk_count", "gold": null},
+    {"id": "D3", "direction": "noise_resist", "query": "Apple fruit nutrition facts", "intent": "苹果水果营养", "gold_type": "junk_count", "gold": null},
+    {"id": "E1", "direction": "exact_fact", "query": "HTTP 451 status code meaning", "intent": "451状态码含义", "gold_type": "fact", "gold": "Unavailable For Legal Reasons"},
+    {"id": "E2", "direction": "exact_fact", "query": "reciprocal rank fusion RRF formula", "intent": "RRF公式", "gold_type": "fact", "gold": "1/(k+rank)", "gold_note": "且提及k常取60"}
+  ]
+}

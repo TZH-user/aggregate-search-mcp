@@ -1,0 +1,93 @@
+{
+  "query_id": "E2",
+  "query": "reciprocal rank fusion RRF formula",
+  "latency_s": 2.61,
+  "engines_used": [
+    "bocha",
+    "tavily",
+    "serper"
+  ],
+  "engines_failed": [],
+  "engine_errors": {},
+  "relevance": {
+    "enabled": true,
+    "terms": 5,
+    "dropped": 0,
+    "downweighted": 0,
+    "boosted": 0,
+    "dropped_items": [],
+    "downweighted_items": [],
+    "domain_rules": {
+      "blocked": 0,
+      "boosted": 0,
+      "blocked_items": [],
+      "boosted_items": []
+    },
+    "rerank": {
+      "modes": [
+        "embedding"
+      ],
+      "embedding": {
+        "enabled": true,
+        "embedded": 18,
+        "error": null,
+        "sim_min": 0.6085,
+        "sim_max": 0.7047
+      },
+      "llm": null
+    }
+  },
+  "results": [
+    {
+      "title": "Medium",
+      "url": "https://medium.com/@devalshah1619/mathematical-intuition-behind-reciprocal-rank-fusion-rrf-explained-in-2-mins-002df0cc5e2a",
+      "snippet": "Using 1/(rank + k), RRF gives more weight to higher ranks (lower rank numbers). This ensures that documents ranked highly by multiple retrievers ...",
+      "published_date": "2 years ago",
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "Reciprocal rank fusion | Elasticsearch Reference",
+      "url": "https://www.elastic.co/docs/reference/elasticsearch/rest-apis/reciprocal-rank-fusion",
+      "snippet": "Reciprocal rank fusion (RRF) is a method for combining multiple result sets with different relevance indicators into a single result set.",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "Introducing reciprocal rank fusion for hybrid search - OpenSearch",
+      "url": "https://opensearch.org/blog/introducing-reciprocal-rank-fusion-hybrid-search",
+      "snippet": "RRF merges ranked results from multiple query sources, such as neural search, k-NN, and Boolean queries, into a single relevance-optimized list.",
+      "published_date": "Feb 12, 2025",
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "What is reciprocal rank fusion in hybrid search?",
+      "url": "https://www.youtube.com/watch?v=2uBcjEecr38&vl=en",
+      "snippet": "In this video, we will learn about what reciprocal rank fusion is, how it works and why it matters in hybrid search. What you will learn: ...",
+      "published_date": "11 months ago",
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "What is Reciprocal Rank Fusion? | ParadeDB",
+      "url": "https://www.paradedb.com/learn/search-concepts/reciprocal-rank-fusion",
+      "snippet": "The standard RRF formula treats all ranking sources equally, but Weighted RRF allows you to assign different weights to each method. For example, when ...",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    }
+  ],
+  "error": null
+}

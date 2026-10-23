@@ -1,0 +1,93 @@
+{
+  "query_id": "C1",
+  "query": "智谱开放平台 API 文档",
+  "latency_s": 2.49,
+  "engines_used": [
+    "bocha",
+    "tavily",
+    "serper"
+  ],
+  "engines_failed": [],
+  "engine_errors": {},
+  "relevance": {
+    "enabled": true,
+    "terms": 2,
+    "dropped": 0,
+    "downweighted": 0,
+    "boosted": 0,
+    "dropped_items": [],
+    "downweighted_items": [],
+    "domain_rules": {
+      "blocked": 0,
+      "boosted": 0,
+      "blocked_items": [],
+      "boosted_items": []
+    },
+    "rerank": {
+      "modes": [
+        "embedding"
+      ],
+      "embedding": {
+        "enabled": true,
+        "embedded": 17,
+        "error": null,
+        "sim_min": 0.5249,
+        "sim_max": 0.7626
+      },
+      "llm": null
+    }
+  },
+  "results": [
+    {
+      "title": "快速开始 - 智谱AI开放文档",
+      "url": "https://docs.bigmodel.cn/cn/api/introduction",
+      "snippet": "API 文档提供了智谱开放平台RESTful API 的详细信息，您可以通过点击Try it 按钮直接调试API。 智谱开放平台提供标准的HTTP API 接口，支持多种编程语言和开发环境 ...",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "平台介绍 - 智谱AI开放文档",
+      "url": "https://docs.bigmodel.cn/cn/guide/start/introduction",
+      "snippet": "智谱大模型开放平台bigmodel.cn，提供功能丰富、灵活易用、高性价比的大模型API 服务，支持模型精调、推理等，致力于构建高效通用的“一站式模型即服务” AI 开发新范式 ...",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "智谱丨BigModel 平台",
+      "url": "https://bigmodel.cn",
+      "snippet": "智谱大模型开放平台-新一代国产自主通用AI大模型开放平台，是国内大模型排名前列的大模型网站，研发了多款LLM模型，多模态视觉模型产品，致力于将AI产品技术与行业场景 ...",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "智谱 GLM | PicoClaw",
+      "url": "https://docs.picoclaw.io/zh-Hans/docs/providers/zhipu-api",
+      "snippet": "官方文档:https://docs.bigmodel.cn/cn/coding-plan/tool/openclaw 获取API Key 第一步:访问平台前往智谱AI 开放平台,注册并登录. API Key 你的智谱API Key API Base URL ...",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "智谱AI开放平台",
+      "url": "https://ad.yiban.io/operate/tool/785",
+      "snippet": "完善的API文档、使用指南和场景示例,降低开发门槛… 自动化生成图文、视频等内容,提升创作效率多",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    }
+  ],
+  "error": null
+}

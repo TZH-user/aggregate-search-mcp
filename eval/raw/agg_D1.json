@@ -1,0 +1,93 @@
+{
+  "query_id": "D1",
+  "query": "Model Context Protocol news October 2026",
+  "latency_s": 1.86,
+  "engines_used": [
+    "bocha",
+    "tavily",
+    "serper"
+  ],
+  "engines_failed": [],
+  "engine_errors": {},
+  "relevance": {
+    "enabled": true,
+    "terms": 6,
+    "dropped": 0,
+    "downweighted": 0,
+    "boosted": 0,
+    "dropped_items": [],
+    "downweighted_items": [],
+    "domain_rules": {
+      "blocked": 0,
+      "boosted": 0,
+      "blocked_items": [],
+      "boosted_items": []
+    },
+    "rerank": {
+      "modes": [
+        "embedding"
+      ],
+      "embedding": {
+        "enabled": true,
+        "embedded": 17,
+        "error": null,
+        "sim_min": 0.5111,
+        "sim_max": 0.6177
+      },
+      "llm": null
+    }
+  },
+  "results": [
+    {
+      "title": "Why Model Context Protocol is suddenly on every executive agenda | CIO",
+      "url": "https://www.cio.com/article/4136548/why-model-context-protocol-is-suddenly-on-every-executive-agenda.html",
+      "snippet": "As AI agents begin operating across enterprise systems, MCP is emerging as the connective layer IT leaders can't afford to ignore.",
+      "published_date": "Feb 24, 2026",
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "Model Context Protocol is going stateless to make scaling simpler | InfoWorld",
+      "url": "https://www.infoworld.com/article/4201254/model-context-protocol-is-going-stateless-to-make-scaling-simpler.html",
+      "snippet": "The latest release candidate, scheduled for release on July 28, removes protocol-level sessions in favor of a stateless architecture, a change ...",
+      "published_date": "Jul 24, 2026",
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "Best Guide to the Model Context Protocol (MCP) in 2026",
+      "url": "https://www.youtube.com/watch?v=NIIjOy0NYaU",
+      "snippet": "Model Context Protocol (MCP) is changing how AI agents connect with tools, data, and business systems. In this video, we break down what MCP is ...",
+      "published_date": "2 months ago",
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "MCP Model Context Protocol for Business | 2026 Guide | NAXIA",
+      "url": "https://www.naxiaglobal.com/blog/mcp-model-context-protocol-business-en",
+      "snippet": "The Model Context Protocol (MCP) is an open standard that connects AI agents to tools, data and business applications through one common ...",
+      "published_date": "Apr 22, 2026",
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "State of Model Context Protocol in Software 2026",
+      "url": "https://stacklok.com/resources/state-of-mcp-in-software-2026",
+      "snippet": "See how Fortune 500 enterprises are adopting MCP in 2026. We surveyed 100 technical leaders so you can benchmark your use of MCP against peers.",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    }
+  ],
+  "error": null
+}

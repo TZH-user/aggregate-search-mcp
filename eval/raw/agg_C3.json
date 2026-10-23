@@ -1,0 +1,93 @@
+{
+  "query_id": "C3",
+  "query": "Rust 编程语言 官网",
+  "latency_s": 2.64,
+  "engines_used": [
+    "bocha",
+    "tavily",
+    "serper"
+  ],
+  "engines_failed": [],
+  "engine_errors": {},
+  "relevance": {
+    "enabled": true,
+    "terms": 2,
+    "dropped": 0,
+    "downweighted": 0,
+    "boosted": 7,
+    "dropped_items": [],
+    "downweighted_items": [],
+    "domain_rules": {
+      "blocked": 0,
+      "boosted": 0,
+      "blocked_items": [],
+      "boosted_items": []
+    },
+    "rerank": {
+      "modes": [
+        "embedding"
+      ],
+      "embedding": {
+        "enabled": true,
+        "embedded": 16,
+        "error": null,
+        "sim_min": 0.479,
+        "sim_max": 0.7708
+      },
+      "llm": null
+    }
+  },
+  "results": [
+    {
+      "title": "Rust 程序设计语言 - Rust 程序设计语言 简体中文版",
+      "url": "https://rust.bootcss.com",
+      "snippet": "Rust 程序设计语言的2018 Edition 包含许多的改进使得Rust 更为工程化并更为容易学习。 本书的HTML 版本可以在https://doc.rust-lang.org/stable/book/",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "Rust 文档网 - Rust 官方文档中文教程",
+      "url": "https://rustwiki.org",
+      "snippet": "Rust 文档网是Rust 官方文档中文翻译项目组创建的Rust 语言文档在线知识库，涵盖了最全面的Rust 语言的中文学习内容和编程入门资料，包括Rust 官方或非官方文档的中文 ...",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "Rust Programming Language",
+      "url": "https://rust-lang.org",
+      "snippet": "Rust is blazingly fast and memory-efficient: with no runtime or garbage collector, it can power performance-critical services, run on embedded devices, and ...",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "The Rust Foundation - Official",
+      "url": "https://rustfoundation.org",
+      "snippet": "The Rust Foundation is the nonprofit steward of the Rust programming language and its vibrant open source community. Learn more and get involved today.",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "Rust 程序设计语言 - Rust 程序设计语言 简体中文版",
+      "url": "https://kaisery.github.io/trpl-zh-cn",
+      "snippet": "本书的英文原版HTML 格式可以在https://doc.rust-lang.org/stable/book/ 在线阅读；使用 rustup 安装的Rust 也包含一份英文离线版，运行 rustup doc --book 即可打开。 本 ...",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    }
+  ],
+  "error": null
+}

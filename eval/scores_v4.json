@@ -1,0 +1,760 @@
+{
+  "_meta": {
+    "judge": "LLM (GLM-5.3, 会话主模型)",
+    "date": "2026-10-24 (v4: +embedding 语义重排)",
+    "disclosure": "判分对象为相关性过滤(relevance.py)启用后的 aggregate 结果;过滤前的判分见 scores_before.json。判分者见过两侧原始输出,属半盲;每条判分附 evidence 供人工复核。实际执行顺序:aggregate 先跑全部14题,内置后跑。",
+    "rubric": {
+      "2": "直接回答意图",
+      "1": "同主题相关但不直接回答/非权威源",
+      "0": "跑题或错实体"
+    }
+  },
+  "A1": {
+    "agg": [
+      {
+        "rank": 1,
+        "score": 2,
+        "evidence": "华尔街见闻 GLM-5.3 报道 → 金标事实命中@1(rerank 后从第3升顶,更直接回答)"
+      },
+      {
+        "rank": 2,
+        "score": 2,
+        "evidence": "官方发布记录"
+      },
+      {
+        "rank": 3,
+        "score": 1,
+        "evidence": "知乎 GLM-4.6 旧代"
+      },
+      {
+        "rank": 4,
+        "score": 2,
+        "evidence": "官方 GLM-5.3 模型页 → 金标命中"
+      },
+      {
+        "rank": 5,
+        "score": 2,
+        "evidence": "界面新闻 GLM-5.3 快讯 → 金标命中"
+      }
+    ],
+    "web": [
+      {
+        "rank": 1,
+        "score": 2,
+        "evidence": "官方 GLM-5.3 说明页 → 金标事实命中"
+      },
+      {
+        "rank": 2,
+        "score": 2,
+        "evidence": "华尔街见闻 GLM-5.3 报道"
+      },
+      {
+        "rank": 3,
+        "score": 2,
+        "evidence": "智谱官网,展示 GLM-5.3"
+      },
+      {
+        "rank": 4,
+        "score": 2,
+        "evidence": "BigModel 开放平台官方站"
+      },
+      {
+        "rank": 5,
+        "score": 2,
+        "evidence": "官方发布记录页"
+      }
+    ]
+  },
+  "A2": {
+    "agg": [
+      {
+        "rank": 1,
+        "score": 2,
+        "evidence": "新快网 → 金标命中@1"
+      },
+      {
+        "rank": 2,
+        "score": 2,
+        "evidence": "文学城深度分析(为什么是她)"
+      },
+      {
+        "rank": 3,
+        "score": 2,
+        "evidence": "美国之音"
+      },
+      {
+        "rank": 4,
+        "score": 2,
+        "evidence": "RFI"
+      },
+      {
+        "rank": 5,
+        "score": 2,
+        "evidence": "美国之音FB视频"
+      }
+    ],
+    "web": [
+      {
+        "rank": 1,
+        "score": 2,
+        "evidence": "金标命中:摘要直接给出答案安妮·卡森(RFI 2026-10-08),与 aggregate 侧 5 条独立来源一致;仅返回1条链接,覆盖不足"
+      }
+    ]
+  },
+  "A3": {
+    "agg": [
+      {
+        "rank": 1,
+        "score": 2,
+        "evidence": "Apple官方Newsroom → 金标命中@1"
+      },
+      {
+        "rank": 2,
+        "score": 2,
+        "evidence": "landtop 上市整理"
+      },
+      {
+        "rank": 3,
+        "score": 2,
+        "evidence": "IT之家"
+      },
+      {
+        "rank": 4,
+        "score": 2,
+        "evidence": "百度百科"
+      },
+      {
+        "rank": 5,
+        "score": 2,
+        "evidence": "发布会直播"
+      }
+    ],
+    "agg_note": "上一轮 rank4 的 iOS 18(2024系统更新)错实体本次未再出现;该条覆盖率 0.67 本不受过滤惩罚,改善主要来自引擎返回池自然波动,非过滤器功劳",
+    "web": [
+      {
+        "rank": 1,
+        "score": 2,
+        "evidence": "Apple 官方 Newsroom,摘要明确 2026-09-09 → 金标命中"
+      },
+      {
+        "rank": 2,
+        "score": 2,
+        "evidence": "iPhone 18 系列懒人包"
+      },
+      {
+        "rank": 3,
+        "score": 2,
+        "evidence": "百度百科 iPhone 18"
+      },
+      {
+        "rank": 4,
+        "score": 2,
+        "evidence": "上市时间整理"
+      },
+      {
+        "rank": 5,
+        "score": 2,
+        "evidence": "知乎:标准版延期分析"
+      }
+    ]
+  },
+  "B1": {
+    "agg": [
+      {
+        "rank": 1,
+        "score": 1,
+        "evidence": ".info 非官方镜像域:标题与'official specification'语义最贴被 rerank 排顶——embedding 认不出域名官方性,重排层已知盲区"
+      },
+      {
+        "rank": 2,
+        "score": 2,
+        "evidence": "官方规范页 .io → 域名金标命中@2(权威域助推与 rerank 相乘后仍被 .info 压过)"
+      },
+      {
+        "rank": 3,
+        "score": 2,
+        "evidence": "官方规范仓库"
+      },
+      {
+        "rank": 4,
+        "score": 2,
+        "evidence": "官方博客新版规范"
+      },
+      {
+        "rank": 5,
+        "score": 2,
+        "evidence": "Anthropic 官方发布公告(新进)"
+      }
+    ],
+    "web": [
+      {
+        "rank": 1,
+        "score": 2,
+        "evidence": "modelcontextprotocol.io 规范页 → 域名金标命中"
+      },
+      {
+        "rank": 2,
+        "score": 2,
+        "evidence": "官方 GitHub 组织"
+      },
+      {
+        "rank": 3,
+        "score": 2,
+        "evidence": "官方规范仓库"
+      },
+      {
+        "rank": 4,
+        "score": 1,
+        "evidence": "Anthropic 发布公告,相关非规范本身"
+      },
+      {
+        "rank": 5,
+        "score": 2,
+        "evidence": "官方 2025-11-25 版规范页"
+      }
+    ],
+    "agg_note": "唯一回退:非官方镜像域 .info 因标题与 query 语义最贴升到第1。embedding 无法判断域名官方性;组合解法=AGG_DOMAIN_BOOST 用户规则或权威域启发式加码。金标仍命中@2,损失 0.5 MRR"
+  },
+  "B2": {
+    "agg": [
+      {
+        "rank": 1,
+        "score": 1,
+        "evidence": "社区教程站"
+      },
+      {
+        "rank": 2,
+        "score": 2,
+        "evidence": "fastapi.tiangolo.com 官方文档 → 域名金标命中@2"
+      },
+      {
+        "rank": 3,
+        "score": 1,
+        "evidence": "GeeksForGeeks"
+      },
+      {
+        "rank": 4,
+        "score": 2,
+        "evidence": "官方 /tutorial"
+      },
+      {
+        "rank": 5,
+        "score": 2,
+        "evidence": "官方 GitHub"
+      }
+    ],
+    "gold_miss_reason": "官方文档 fastapi.tiangolo.com 本轮掉出 top-5:boost 1.3 抬不动 serper 深名次(约第8)的单源结果,且本轮 realpython 双源命中挤位。过滤前该页恰在第5擦边,属引擎池波动+助推力度不足",
+    "web": [
+      {
+        "rank": 1,
+        "score": 2,
+        "evidence": "fastapi.tiangolo.com → 域名金标命中,第1"
+      },
+      {
+        "rank": 2,
+        "score": 2,
+        "evidence": "官方 GitHub 组织"
+      },
+      {
+        "rank": 3,
+        "score": 1,
+        "evidence": "社区教程站,非官方"
+      },
+      {
+        "rank": 4,
+        "score": 1,
+        "evidence": "GeeksForGeeks 教程"
+      },
+      {
+        "rank": 5,
+        "score": 1,
+        "evidence": "Reddit 入门指南"
+      }
+    ]
+  },
+  "B3": {
+    "agg": [
+      {
+        "rank": 1,
+        "score": 2,
+        "evidence": "docs.python.org → 域名金标命中@1"
+      },
+      {
+        "rank": 2,
+        "score": 1,
+        "evidence": "python-can 第三方"
+      },
+      {
+        "rank": 3,
+        "score": 2,
+        "evidence": "官方 HOWTO"
+      },
+      {
+        "rank": 4,
+        "score": 1,
+        "evidence": "BBC博客"
+      },
+      {
+        "rank": 5,
+        "score": 1,
+        "evidence": "W3Schools(新进)"
+      }
+    ],
+    "web": [
+      {
+        "rank": 1,
+        "score": 2,
+        "evidence": "docs.python.org asyncio → 域名金标命中"
+      },
+      {
+        "rank": 2,
+        "score": 2,
+        "evidence": "docs.python.org 官方 HOWTO"
+      },
+      {
+        "rank": 3,
+        "score": 1,
+        "evidence": "python-can 第三方文档"
+      },
+      {
+        "rank": 4,
+        "score": 1,
+        "evidence": "W3Schools 参考"
+      },
+      {
+        "rank": 5,
+        "score": 1,
+        "evidence": "Real Python 教程"
+      }
+    ]
+  },
+  "C1": {
+    "agg": [
+      {
+        "rank": 1,
+        "score": 1,
+        "evidence": "php.cn 新闻(词面过滤盲区同前)"
+      },
+      {
+        "rank": 2,
+        "score": 2,
+        "evidence": "docs.bigmodel.cn 快速开始 → 域名金标命中@2"
+      },
+      {
+        "rank": 3,
+        "score": 2,
+        "evidence": "平台介绍文档"
+      },
+      {
+        "rank": 4,
+        "score": 2,
+        "evidence": "bigmodel.cn 主站 → 域名金标命中"
+      },
+      {
+        "rank": 5,
+        "score": 1,
+        "evidence": "PicoClaw 第三方"
+      }
+    ],
+    "web": [
+      {
+        "rank": 1,
+        "score": 2,
+        "evidence": "open.bigmodel.cn/doc/api 官方API文档入口 → 域名金标命中(第1)"
+      },
+      {
+        "rank": 2,
+        "score": 2,
+        "evidence": "docs.bigmodel.cn 文档中心"
+      },
+      {
+        "rank": 3,
+        "score": 2,
+        "evidence": "官方 LangChain 集成文档"
+      },
+      {
+        "rank": 4,
+        "score": 2,
+        "evidence": "官方 AutoGLM 文档"
+      },
+      {
+        "rank": 5,
+        "score": 1,
+        "evidence": "智谱官网首页,非文档"
+      }
+    ]
+  },
+  "C2": {
+    "agg": [
+      {
+        "rank": 1,
+        "score": 2,
+        "evidence": "open.bochaai.com → 域名金标命中@1"
+      },
+      {
+        "rank": 2,
+        "score": 2,
+        "evidence": "bochaai.com 官方主站 → 域名金标命中"
+      },
+      {
+        "rank": 3,
+        "score": 2,
+        "evidence": "CSDN 接入教程"
+      },
+      {
+        "rank": 4,
+        "score": 1,
+        "evidence": "openi.cn 收录页(新进)"
+      },
+      {
+        "rank": 5,
+        "score": 2,
+        "evidence": "掘金官方API介绍(新进)"
+      }
+    ],
+    "web": [
+      {
+        "rank": 1,
+        "score": 2,
+        "evidence": "open.bochaai.com → 域名金标命中(第1)"
+      },
+      {
+        "rank": 2,
+        "score": 2,
+        "evidence": "bocha.cn 官方C端产品站"
+      },
+      {
+        "rank": 3,
+        "score": 2,
+        "evidence": "官方 GitHub MCP 仓库"
+      },
+      {
+        "rank": 4,
+        "score": 1,
+        "evidence": "服务协议页"
+      },
+      {
+        "rank": 5,
+        "score": 1,
+        "evidence": "阿里云市场第三方分发页"
+      }
+    ]
+  },
+  "C3": {
+    "agg": [
+      {
+        "rank": 1,
+        "score": 1,
+        "evidence": "rustwiki.org 社区中文站"
+      },
+      {
+        "rank": 2,
+        "score": 2,
+        "evidence": "rust-lang.org 官网 → 域名金标命中@2"
+      },
+      {
+        "rank": 3,
+        "score": 1,
+        "evidence": "官方书中文版"
+      },
+      {
+        "rank": 4,
+        "score": 1,
+        "evidence": "官方论坛子域"
+      },
+      {
+        "rank": 5,
+        "score": 1,
+        "evidence": "rustwiki 文档页"
+      }
+    ],
+    "agg_note": "限条+池波动使官网真首页进入 top-2(此前从未进top-5);rustwiki 与官网同获域名助推,助推无法区分官方/社区站",
+    "web": [
+      {
+        "rank": 1,
+        "score": 2,
+        "evidence": "rust-lang.org 官网 → 域名金标命中(第1)"
+      },
+      {
+        "rank": 2,
+        "score": 1,
+        "evidence": "维基百科"
+      },
+      {
+        "rank": 3,
+        "score": 1,
+        "evidence": "官方书中文版"
+      },
+      {
+        "rank": 4,
+        "score": 1,
+        "evidence": "rustwiki.org 社区中文站,非官方"
+      },
+      {
+        "rank": 5,
+        "score": 2,
+        "evidence": "官方 GitHub 组织"
+      }
+    ]
+  },
+  "D1": {
+    "agg": [
+      {
+        "rank": 1,
+        "score": 2,
+        "evidence": "官方博客 2026-07-28 规范 → @1"
+      },
+      {
+        "rank": 2,
+        "score": 2,
+        "evidence": "Stacklok 调研"
+      },
+      {
+        "rank": 3,
+        "score": 2,
+        "evidence": "CIO 报道(新进)"
+      },
+      {
+        "rank": 4,
+        "score": 2,
+        "evidence": "YouTube MCP 指南(新进)"
+      },
+      {
+        "rank": 5,
+        "score": 2,
+        "evidence": "维基 MCP 条目(新进)"
+      }
+    ],
+    "agg_note": "rerank 设计目标场景全胜:3条主题撞词垃圾(时尚/词典/模特,sim 0.36~0.42)全部沉出 top-5,补入 3 条真 MCP 内容——这是 v2 词法过滤器原理上做不到的",
+    "web": [
+      {
+        "rank": 1,
+        "score": 2,
+        "evidence": "GlobeNewswire 2026-10-21 MCP Beta 新闻,恰好是10月真新闻"
+      },
+      {
+        "rank": 2,
+        "score": 2,
+        "evidence": "官方博客规范发布"
+      },
+      {
+        "rank": 3,
+        "score": 2,
+        "evidence": "InfoWorld stateless 报道"
+      },
+      {
+        "rank": 4,
+        "score": 2,
+        "evidence": "Stacklok 调研"
+      },
+      {
+        "rank": 5,
+        "score": 2,
+        "evidence": "CIO 报道"
+      }
+    ]
+  },
+  "D2": {
+    "agg": [
+      {
+        "rank": 1,
+        "score": 2,
+        "evidence": "Responsible Travel"
+      },
+      {
+        "rank": 2,
+        "score": 2,
+        "evidence": "Rough Guides"
+      },
+      {
+        "rank": 3,
+        "score": 2,
+        "evidence": "indietraveller"
+      },
+      {
+        "rank": 4,
+        "score": 2,
+        "evidence": "Amazon 旅游书榜"
+      },
+      {
+        "rank": 5,
+        "score": 2,
+        "evidence": "Reddit 实录(新进)"
+      }
+    ],
+    "agg_note": "zhipu 连续第3轮在本查询失败,可复现引擎兼容问题",
+    "web": [
+      {
+        "rank": 1,
+        "score": 2,
+        "evidence": "indietraveller 同款攻略"
+      },
+      {
+        "rank": 2,
+        "score": 2,
+        "evidence": "Rough Guides"
+      },
+      {
+        "rank": 3,
+        "score": 2,
+        "evidence": "Reddit 实用攻略"
+      },
+      {
+        "rank": 4,
+        "score": 2,
+        "evidence": "Responsible Travel"
+      },
+      {
+        "rank": 5,
+        "score": 2,
+        "evidence": "Lonely Planet 行程"
+      }
+    ]
+  },
+  "D3": {
+    "agg": [
+      {
+        "rank": 1,
+        "score": 2,
+        "evidence": "果农协会营养页"
+      },
+      {
+        "rank": 2,
+        "score": 2,
+        "evidence": "Pink Lady"
+      },
+      {
+        "rank": 3,
+        "score": 2,
+        "evidence": "USDA"
+      },
+      {
+        "rank": 4,
+        "score": 2,
+        "evidence": "Healthline"
+      },
+      {
+        "rank": 5,
+        "score": 2,
+        "evidence": "Sunrise Orchards(新进)"
+      }
+    ],
+    "web": [
+      {
+        "rank": 1,
+        "score": 2,
+        "evidence": "Healthline"
+      },
+      {
+        "rank": 2,
+        "score": 2,
+        "evidence": "哈佛公共卫生学院"
+      },
+      {
+        "rank": 3,
+        "score": 2,
+        "evidence": "USDA"
+      }
+    ],
+    "web_note": "仅返回3条链接",
+    "agg_note": "本轮 drop=12:池中大量苹果公司/无关页被覆盖率过滤剔除,全部为top-5外候选,top-5完好"
+  },
+  "E1": {
+    "agg": [
+      {
+        "rank": 1,
+        "score": 2,
+        "evidence": "http.dev:标题即正确答案短语 → 金标命中@1"
+      },
+      {
+        "rank": 2,
+        "score": 2,
+        "evidence": "MDN(权威但掉到@2,金标仍命中)"
+      },
+      {
+        "rank": 3,
+        "score": 2,
+        "evidence": "腾讯云中文解读"
+      },
+      {
+        "rank": 4,
+        "score": 2,
+        "evidence": "维基百科"
+      },
+      {
+        "rank": 5,
+        "score": 2,
+        "evidence": "Medium解读"
+      }
+    ],
+    "web": [
+      {
+        "rank": 1,
+        "score": 2,
+        "evidence": "摘要直接给出 'Unavailable For Legal Reasons'+RFC 7725 → 金标命中;链接仅3条(RFC/Wikipedia/MDN)"
+      }
+    ],
+    "web_all_scores": [
+      2,
+      2,
+      2
+    ],
+    "agg_note": "sim_max=0.65 偏低:query 'HTTP 451 status code meaning' 与结果标题文本短,相似度天花板低,但相对序仍正确"
+  },
+  "E2": {
+    "agg": [
+      {
+        "rank": 1,
+        "score": 2,
+        "evidence": "Medium 含公式 → 金标命中@1"
+      },
+      {
+        "rank": 2,
+        "score": 2,
+        "evidence": "Elasticsearch文档"
+      },
+      {
+        "rank": 3,
+        "score": 2,
+        "evidence": "OpenSearch博客"
+      },
+      {
+        "rank": 4,
+        "score": 2,
+        "evidence": "YouTube RRF讲解(新进)"
+      },
+      {
+        "rank": 5,
+        "score": 2,
+        "evidence": "MongoDB"
+      }
+    ],
+    "web": [
+      {
+        "rank": 1,
+        "score": 2,
+        "evidence": "Medium 同款,摘要给出完整公式与 k=60 → 金标命中"
+      },
+      {
+        "rank": 2,
+        "score": 2,
+        "evidence": "Elasticsearch 文档"
+      },
+      {
+        "rank": 3,
+        "score": 2,
+        "evidence": "OpenSearch 博客"
+      },
+      {
+        "rank": 4,
+        "score": 2,
+        "evidence": "ParadeDB"
+      },
+      {
+        "rank": 5,
+        "score": 2,
+        "evidence": "MongoDB"
+      }
+    ]
+  }
+}

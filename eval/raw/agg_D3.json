@@ -1,0 +1,127 @@
+{
+  "query_id": "D3",
+  "query": "Apple fruit nutrition facts",
+  "latency_s": 1.97,
+  "engines_used": [
+    "bocha",
+    "tavily",
+    "serper"
+  ],
+  "engines_failed": [],
+  "engine_errors": {},
+  "relevance": {
+    "enabled": true,
+    "terms": 4,
+    "dropped": 6,
+    "downweighted": 2,
+    "boosted": 0,
+    "dropped_items": [
+      {
+        "title": "水果营养成分表.doc_淘豆网",
+        "url": "https://www.taodocs.com/p-549938525.html"
+      },
+      {
+        "title": "苹果_营养饮食专题一流养生网(168866.com)",
+        "url": "http://www.168866.com/yangsheng/pingguo_103.shtml"
+      },
+      {
+        "title": "苹果的营养成份如何? - 问答频道 - 博禾医生",
+        "url": "https://www.bohe.cn/ask/view/103727216.html"
+      },
+      {
+        "title": "苹果的营养价值分析 - 水果邦 -发现农友,网聚农人力量。",
+        "url": "http://www.shuiguobang.com/html/02/n-37602-2.html"
+      },
+      {
+        "title": "苹果的营养价值及功效 - 权威语音 - 大众养生网",
+        "url": "https://www.cndzys.com/ylcore/voice_detail/18859.html"
+      },
+      {
+        "title": "苹果的营养价值及功效 - 权威视频 - 大众养生网",
+        "url": "https://www.cndzys.com/ylcore/video_detail/4789.html"
+      }
+    ],
+    "downweighted_items": [
+      {
+        "title": "How Healthy Are Apples? From Calories to Whether They * ...",
+        "url": "https://www.elior-na.com/spotlight/how-healthy-are-apples-calories-whether-they-really-keep-doctor-away-heres-what-know"
+      },
+      {
+        "title": "苹果的营养成分表分析",
+        "url": "https://m.chachaba.com/yyeat/shiwu/108644.html"
+      }
+    ],
+    "domain_rules": {
+      "blocked": 0,
+      "boosted": 0,
+      "blocked_items": [],
+      "boosted_items": []
+    },
+    "rerank": {
+      "modes": [
+        "embedding"
+      ],
+      "embedding": {
+        "enabled": true,
+        "embedded": 11,
+        "error": null,
+        "sim_min": 0.5233,
+        "sim_max": 0.6505
+      },
+      "llm": null
+    }
+  },
+  "results": [
+    {
+      "title": "Nutritional Benefits - NH Fruit Growers Association",
+      "url": "https://www.nhfruitgrowers.org/nutritional-benefits",
+      "snippet": "Apples are a good source of potassium, folic acid, and vitamin C. A medium apple, approximately 5 ounces, has only 81 calories and a whopping 3.7 grams of fiber ...",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "Apple Nutrition",
+      "url": "https://www.pinkladyapples.co.uk/the-pink-lady-story/apple-nutrition-vitamins-and-minerals",
+      "snippet": "Apple Mineral Content ; Potassium (mg), 100 mg, 152 mg ; Calcium (mg), 5 mg, 8 mg ; Magnesium (mg), 4 mg, 6 mg ; Phosphorus (mg), 8 mg, 12 mg ...",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "Apples | SNAP-Ed",
+      "url": "https://snaped.fna.usda.gov/resources/nutrition-education-materials/seasonal-produce-guide/apples",
+      "snippet": "Nutrition Information ; Calcium, 1 mg ; Potassium, 4 mg ; Sodium, 2 mg ; Iron, 1 mg.",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "Apples 101: Nutrition Facts and Health Benefits",
+      "url": "https://www.healthline.com/nutrition/foods/apples",
+      "snippet": "Apple nutrition facts · Calories: 94.6 grams (g) · Water: 156 g · Protein: 0.473 g · Carbohydrates: 25.1 g · Sugar: 18.9 g · Fiber: 4.37 g · Fat: 0.3 g ...",
+      "published_date": "Jan 20, 2025",
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "Apple Nutrition Information - Sunrise Orchards",
+      "url": "https://www.sunriseapples.com/content/apples/apple-nutrition",
+      "snippet": "APPLE NUTRITION FACTS ; Sodium, 0mg, 0% ; Potassium, 170mg, 5% ; Total Carbohydrate, 22g, 7% ; Dietary Fiber, 5g, 20%.",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    }
+  ],
+  "error": null
+}

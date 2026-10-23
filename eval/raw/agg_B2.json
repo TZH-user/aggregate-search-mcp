@@ -1,0 +1,93 @@
+{
+  "query_id": "B2",
+  "query": "FastAPI official documentation",
+  "latency_s": 2.55,
+  "engines_used": [
+    "bocha",
+    "tavily",
+    "serper"
+  ],
+  "engines_failed": [],
+  "engine_errors": {},
+  "relevance": {
+    "enabled": true,
+    "terms": 1,
+    "dropped": 0,
+    "downweighted": 0,
+    "boosted": 2,
+    "dropped_items": [],
+    "downweighted_items": [],
+    "domain_rules": {
+      "blocked": 0,
+      "boosted": 0,
+      "blocked_items": [],
+      "boosted_items": []
+    },
+    "rerank": {
+      "modes": [
+        "embedding"
+      ],
+      "embedding": {
+        "enabled": true,
+        "embedded": 17,
+        "error": null,
+        "sim_min": 0.4975,
+        "sim_max": 0.7512
+      },
+      "llm": null
+    }
+  },
+  "results": [
+    {
+      "title": "Home - FastAPI Tutorial",
+      "url": "https://fastapi-tutorial.readthedocs.io",
+      "snippet": "FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints.",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "FastAPI - FastAPI",
+      "url": "https://fastapi.tiangolo.com",
+      "snippet": "FastAPI is a modern, fast (high-performance), web framework for building APIs with Python based on standard Python type hints. The key features are: Fast: Very ...",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "Introduction to FastAPI - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/python/introduction-to-fastapi",
+      "snippet": "FastAPI is a modern Python web framework used to build APIs and backend applications quickly and efficiently. Generates interactive API ...",
+      "published_date": "Jun 20, 2026",
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "An Introduction to Using FastAPI | Refine",
+      "url": "https://refine.dev/blog/introduction-to-fast-api",
+      "snippet": "We'll be looking at FastAPI, a modern Python microframework that simplifies the creation of web APIs using Python programming.",
+      "published_date": "Jan 9, 2025",
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "Get Started With FastAPI – Real Python",
+      "url": "https://realpython.com/get-started-with-fastapi",
+      "snippet": "FastAPI is a web framework for building APIs with Python. It leverages standard Python type hints to provide automatic validation, ...",
+      "published_date": "Sep 22, 2025",
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    }
+  ],
+  "error": null
+}

@@ -1,0 +1,102 @@
+{
+  "query_id": "A1",
+  "query": "智谱 GLM 最新模型 发布",
+  "latency_s": 4.81,
+  "engines_used": [
+    "bocha",
+    "tavily",
+    "serper"
+  ],
+  "engines_failed": [
+    "zhipu"
+  ],
+  "engine_errors": {
+    "zhipu": {
+      "kind": "rate_limited",
+      "status": 429,
+      "detail": "{\"error\":{\"code\":\"1113\",\"message\":\"余额不足或无可用资源包,请充值。\"}}",
+      "hint": "触发限流,稍后重试"
+    }
+  },
+  "relevance": {
+    "enabled": true,
+    "terms": 4,
+    "dropped": 0,
+    "downweighted": 0,
+    "boosted": 0,
+    "dropped_items": [],
+    "downweighted_items": [],
+    "domain_rules": {
+      "blocked": 0,
+      "boosted": 0,
+      "blocked_items": [],
+      "boosted_items": []
+    },
+    "rerank": {
+      "modes": [
+        "embedding"
+      ],
+      "embedding": {
+        "enabled": true,
+        "embedded": 18,
+        "error": null,
+        "sim_min": 0.6027,
+        "sim_max": 0.7499
+      },
+      "llm": null
+    }
+  },
+  "results": [
+    {
+      "title": "刚刚！智谱发布GLM-5.3模型、“为编程而生”，性能比肩Fable 5",
+      "url": "https://wallstreetcn.com/articles/3779432",
+      "snippet": "智谱最新旗舰模型GLM-5.3正式亮相,在编程能力和网络安全漏洞发现・ 相同的7000亿参数基础模型构建・ 得分从4.6跃升至28.3。",
+      "published_date": "Aug 14, 2026",
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "模型与产品发布记录 - 智谱AI开放文档",
+      "url": "https://docs.bigmodel.cn/cn/update/new-releases",
+      "snippet": "GLM-5.3-Flash. 原生融入视觉能力，使模型能够主动观察界面、渲染与交互反馈并持续迭代改进，实现代码、浏览器与图形界面的协同闭环。 极致高效混合架构：采用线性注意 ...",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "智谱旗舰模型GLM-4.6开源发布，代码能力对齐Claude Sonnet 4 - 知乎",
+      "url": "https://zhuanlan.zhihu.com/p/1959557304149050188",
+      "snippet": "作为GLM系列的最新版本，GLM-4.6是系列最强的代码Coding模型（较GLM-4.5提升27%）。在真实编程、长上下文处理、推理能力、信息搜索、写作能力与智能体应用等多个方面实现 ...",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "Z.ai - Inspiring AGI to Benefit Humanity",
+      "url": "https://www.zhipuai.cn/zh",
+      "snippet": "GLM模型 · 高效能模型服务. 提供能力全球领先、灵活易用、高性价比的全模态大模型API 服务. GLM-5.3 · 精选智能体应用. 数十个深度耦合业务的应用级API，开箱即用，直击千行 ...",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    },
+    {
+      "title": "GLM-5.3 - 智谱AI开放文档",
+      "url": "https://docs.bigmodel.cn/cn/guide/models/text/glm-5.3",
+      "snippet": "GLM-5.3 是智谱最新旗舰模型,复杂软件工程与Agent 任务能力全面进阶。它使用与GLM-5.2 相同的基础模型——所有提升均来自后训练。",
+      "published_date": null,
+      "engines": [
+        "tavily",
+        "serper"
+      ]
+    }
+  ],
+  "error": null
+}

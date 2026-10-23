@@ -1,0 +1,1373 @@
+{
+  "A1": {
+    "query_id": "A1",
+    "query": "智谱 GLM 最新模型 发布",
+    "latency_s": 4.81,
+    "engines_used": [
+      "bocha",
+      "tavily",
+      "serper"
+    ],
+    "engines_failed": [
+      "zhipu"
+    ],
+    "engine_errors": {
+      "zhipu": {
+        "kind": "rate_limited",
+        "status": 429,
+        "detail": "{\"error\":{\"code\":\"1113\",\"message\":\"余额不足或无可用资源包,请充值。\"}}",
+        "hint": "触发限流,稍后重试"
+      }
+    },
+    "relevance": {
+      "enabled": true,
+      "terms": 4,
+      "dropped": 0,
+      "downweighted": 0,
+      "boosted": 0,
+      "dropped_items": [],
+      "downweighted_items": [],
+      "domain_rules": {
+        "blocked": 0,
+        "boosted": 0,
+        "blocked_items": [],
+        "boosted_items": []
+      },
+      "rerank": {
+        "modes": [
+          "embedding"
+        ],
+        "embedding": {
+          "enabled": true,
+          "embedded": 18,
+          "error": null,
+          "sim_min": 0.6027,
+          "sim_max": 0.7499
+        },
+        "llm": null
+      }
+    },
+    "results": [
+      {
+        "title": "刚刚！智谱发布GLM-5.3模型、“为编程而生”，性能比肩Fable 5",
+        "url": "https://wallstreetcn.com/articles/3779432",
+        "snippet": "智谱最新旗舰模型GLM-5.3正式亮相,在编程能力和网络安全漏洞发现・ 相同的7000亿参数基础模型构建・ 得分从4.6跃升至28.3。",
+        "published_date": "Aug 14, 2026",
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "模型与产品发布记录 - 智谱AI开放文档",
+        "url": "https://docs.bigmodel.cn/cn/update/new-releases",
+        "snippet": "GLM-5.3-Flash. 原生融入视觉能力，使模型能够主动观察界面、渲染与交互反馈并持续迭代改进，实现代码、浏览器与图形界面的协同闭环。 极致高效混合架构：采用线性注意 ...",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "智谱旗舰模型GLM-4.6开源发布，代码能力对齐Claude Sonnet 4 - 知乎",
+        "url": "https://zhuanlan.zhihu.com/p/1959557304149050188",
+        "snippet": "作为GLM系列的最新版本，GLM-4.6是系列最强的代码Coding模型（较GLM-4.5提升27%）。在真实编程、长上下文处理、推理能力、信息搜索、写作能力与智能体应用等多个方面实现 ...",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "Z.ai - Inspiring AGI to Benefit Humanity",
+        "url": "https://www.zhipuai.cn/zh",
+        "snippet": "GLM模型 · 高效能模型服务. 提供能力全球领先、灵活易用、高性价比的全模态大模型API 服务. GLM-5.3 · 精选智能体应用. 数十个深度耦合业务的应用级API，开箱即用，直击千行 ...",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "GLM-5.3 - 智谱AI开放文档",
+        "url": "https://docs.bigmodel.cn/cn/guide/models/text/glm-5.3",
+        "snippet": "GLM-5.3 是智谱最新旗舰模型,复杂软件工程与Agent 任务能力全面进阶。它使用与GLM-5.2 相同的基础模型——所有提升均来自后训练。",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "A2": {
+    "query_id": "A2",
+    "query": "2026年 诺贝尔文学奖 得主",
+    "latency_s": 3.37,
+    "engines_used": [
+      "bocha",
+      "tavily",
+      "serper"
+    ],
+    "engines_failed": [],
+    "engine_errors": {},
+    "relevance": {
+      "enabled": true,
+      "terms": 4,
+      "dropped": 0,
+      "downweighted": 4,
+      "boosted": 0,
+      "dropped_items": [],
+      "downweighted_items": [
+        {
+          "title": "Nobel Prize in Literature 2026 - NobelPrize.org",
+          "url": "https://www.nobelprize.org/prizes/literature/2026/summary"
+        },
+        {
+          "title": "The official website of the Nobel Prize - NobelPrize.org",
+          "url": "https://www.nobelprize.org"
+        },
+        {
+          "title": "Berkeley's Nobel laureates",
+          "url": "https://inspire.berkeley.edu/get-inspired/nobels"
+        },
+        {
+          "title": "Nobel prize in literature winner Anne Carson 'taken by ... -",
+          "url": "https://www.youtube.com/watch?v=BL3J-oQ6yHA"
+        }
+      ],
+      "domain_rules": {
+        "blocked": 0,
+        "boosted": 0,
+        "blocked_items": [],
+        "boosted_items": []
+      },
+      "rerank": {
+        "modes": [
+          "embedding"
+        ],
+        "embedding": {
+          "enabled": true,
+          "embedded": 20,
+          "error": null,
+          "sim_min": 0.3684,
+          "sim_max": 0.6818
+        },
+        "llm": null
+      }
+    },
+    "results": [
+      {
+        "title": "2026诺贝尔文学奖,揭晓_腾讯新闻",
+        "url": "https://news.qq.com/rain/a/20261009A04S5E00",
+        "snippet": "北京时间10月8日19时许,2026年诺贝尔文学奖揭晓。瑞典文学院宣布2026年诺贝尔文学奖授予加拿大作家安妮·卡森,以表彰她大胆而富有创造力的作品,这些作品以与古典传统的嬉戏对话,创造了当代文学的新形式。据诺贝尔基金会决定,2026年每项诺贝尔奖的奖金都将增加100万瑞典克朗,达到1200万瑞典克朗。诺贝尔文学奖近五年得主2025年:拉斯洛·卡撒兹纳霍凯(László\nKrasznahorkai)北京时间10月9日19时许,2025年诺贝尔文学奖揭晓。瑞典文学院宣布2025年诺贝尔文学奖授予匈牙利作家László\nKrasznahorkai,以表彰他那些引人入胜且富有远见的作品,这些作品在末日般的恐怖中重新肯定了艺术的力量。2024年:韩江北京时间10月10日19时许,2024年诺贝尔文学奖揭晓。瑞典文学院宣布2024年诺贝尔文学奖授予韩国作家韩江,以表彰她用强烈的诗意散文直面历史创伤,揭示人类生命的脆弱。2023年:约翰·福瑟(Jon\nFosse)北京时间10月5日19时许,2023年诺贝尔文学奖揭晓。瑞典文学院宣布2023年诺贝尔文学奖授予挪威剧作家约翰·福瑟(Jon\nFosse),\n以表彰他的创新戏剧和散文,为难以言喻之事发声。2022年:安妮·埃尔诺(Annie\nErnaux)当地时间10月6日,2022年诺贝尔文学奖获奖名单揭晓,法国作家安妮·埃尔诺(Annie\nErnaux)获奖,“以表彰她发现个人记忆的根源、隔阂和集体限制的勇气和敏锐度”。安妮·埃尔诺,当代法国文坛上有影响的女作家之一,1940年生于法国滨海塞纳省的利勒博纳。2021年11月,获得英国皇家文学学会国际作家终身荣誉奖。代表作有《空衣橱》、《位置》、《一个女人》、《单纯的激情》、《耻辱》、《事件》、《占领》等。长篇小说《悠悠岁月》获人民文学出版社21世纪2009年度最佳外国小说奖。2021年:阿",
+        "published_date": "2026-10-09T11:10:15+08:00",
+        "engines": [
+          "bocha"
+        ]
+      },
+      {
+        "title": "2026年诺贝尔文学奖揭晓!_艾思科蓝",
+        "url": "https://m.ais.cn/news/impact/45175",
+        "snippet": "2026年诺贝尔文学奖揭晓!\n2026-10-09\n4181\n北京时间10月8日19时许,2026年诺贝尔文学奖揭晓。\n2026年诺贝尔文学奖授予加拿大作家安妮·卡森,以表彰她“以大胆而富有创造力的作品,在与古典传统的俏皮对话中,为当代文学创造了新的形式”2025年——匈牙利作家克劳斯瑙霍尔考伊·拉斯洛,以表彰他那些引人入胜且富有远见的作品,这些作品在末日般的恐怖中重新肯定了艺术的力量2024年——韩国作家韩江荣获2023年诺贝尔文学奖,以表彰她用强烈的诗意散文直面历史创伤,揭示人类生命的脆弱。2023年——挪威剧作家约翰·福瑟荣获2023年诺贝尔文学奖;代表作《有人将至》、《秋之梦》等,获奖理由:“创新的戏剧和散文,为不可言说的事情发声”。2022年——法国作家安妮·埃尔诺荣获2022年的诺贝尔文学奖;代表作《悠悠岁月》,获奖理由:“她以勇气和敏锐的洞察力揭示了个人记忆的根源、隔阂和集体限制”。2021年——坦桑尼亚作家阿卜杜勒扎克·古尔纳荣获2021年的诺贝尔文学奖;代表作《天堂》,《沙漠》等。获奖理由:“毫不妥协并充满同理心地深入探索着殖民主义的影响,关切着那些夹杂在文化和地缘裂隙间难民的命运”。诺贝尔文学奖是根据诺贝尔1895年的遗嘱而设立的五个诺贝尔奖之一,该奖旨在奖励在文学领域创作出具理想倾向之最佳作品者。1901年诺贝尔文学奖首次颁发。1931年埃利克·阿克塞尔·卡尔费尔德死后获得了诺贝尔文学奖,是第一位死后追授的获奖者。2012年莫言获得诺贝尔文学奖,成为第一个获得该奖的中国籍作家。诺贝尔文学奖的甄选委员会通常在每年10月份第二个周四公布得主。颁奖典礼于每年12月10日,即诺贝尔逝世周年纪念日,在瑞典斯德哥尔摩举行,并由瑞典国王亲自颁奖。根据诺贝尔奖官网显示,诺贝尔文学奖每年评选和颁发一次,由瑞典文学院颁发一枚金牌、一份证书以及一笔奖金。截至2025年,共",
+        "published_date": "2026-10-09T00:00:00+08:00",
+        "engines": [
+          "bocha"
+        ]
+      },
+      {
+        "title": "2026年诺贝尔文学奖揭晓! -教育在线",
+        "url": "https://www.eol.cn/news/yaowen/202610/t20261009_2780461.shtml",
+        "snippet": "北京时间10月8日19时许,2026年诺贝尔文学奖揭晓。瑞典文学院宣布2026年诺贝尔文学奖授予加拿大作家安妮·卡森,以表彰她大胆而富有创造力的作品,这些作品以与古典传统的嬉戏对话,创造了当代文学的新形式。据诺贝尔基金会决定,2026年每项诺贝尔奖的奖金都将增加100万瑞典克朗,达到1200万瑞典克朗。\n诺贝尔文学奖近五年得主\n2025年:拉斯洛·卡撒兹纳霍凯(László\nKrasznahorkai)\n北京时间10月9日19时许,2025年诺贝尔文学奖揭晓。瑞典文学院宣布2025年诺贝尔文学奖授予匈牙利作家László\nKrasznahorkai,以表彰他那些引人入胜且富有远见的作品,这些作品在末日般的恐怖中重新肯定了艺术的力量。\n2024年:韩江\n北京时间10月10日19时许,2024年诺贝尔文学奖揭晓。瑞典文学院宣布2024年诺贝尔文学奖授予韩国作家韩江,以表彰她用强烈的诗意散文直面历史创伤,揭示人类生命的脆弱。\n2023年:约翰·福瑟(Jon\nFosse)\n北京时间10月5日19时许,2023年诺贝尔文学奖揭晓。瑞典文学院宣布2023年诺贝尔文学奖授予挪威剧作家约翰·福瑟(Jon\nFosse),\n以表彰他的创新戏剧和散文,为难以言喻之事发声。\n2022年:安妮·埃尔诺(Annie\nErnaux)\n当地时间10月6日,2022年诺贝尔文学奖获奖名单揭晓,法国作家安妮·埃尔诺(Annie\nErnaux)获奖,“以表彰她发现个人记忆的根源、隔阂和集体限制的勇气和敏锐度”。安妮·埃尔诺,当代法国文坛上有影响的女作家之一,1940年生于法国滨海塞纳省的利勒博纳。2021年11月,获得英国皇家文学学会国际作家终身荣誉奖。代表作有《空衣橱》、《位置》、《一个女人》、《单纯的激情》、《耻辱》、《事件》、《占领》等。长篇小说《悠悠岁月》获人民文学出版社21世纪2009年度最佳外国小",
+        "published_date": "2026-10-09T00:00:00+08:00",
+        "engines": [
+          "bocha"
+        ]
+      },
+      {
+        "title": "刚刚!2026年诺贝尔文学奖,揭晓",
+        "url": "https://c.m.163.com/news/a/L8OHNG150511BNSN.html",
+        "snippet": "北京时间10月8日,2026年诺贝尔文学奖揭晓!2026\n年诺贝尔文学奖授予加拿大作家安妮·卡森,“以表彰她大胆而富有创造力的作品,这些作品在与古典传统的趣味对话中,为当代文学创造了新的形式。”\n近5年诺贝尔文学奖得主诺贝尔文学奖是根据诺贝尔1895年的遗嘱而设立的五个诺贝尔奖之一,该奖旨在奖励在文学领域创作出具理想倾向之最佳作品者。2025年诺贝尔文学奖被授予匈牙利作家拉斯洛·卡撒兹纳霍凯(László\nKrasznahorkai),以表彰其“在末日恐怖的背景下,以引人入胜且富有远见的创作重申了艺术的力量”。2024年诺贝尔文学奖被授予韩国作家韩江(Han\nKang),获奖理由是“其充满激情的诗意散文,这些作品直面历史创伤,揭示了人类生命的脆弱性。”2023年诺贝尔文学奖被授予挪威作家乔恩·福斯(Jon\nFosse),获奖理由是“他那些富有创新性的戏剧作品与散文,让那些难以言说的情感得以被表达出来。”2022年诺贝尔文学奖被授予法国作家安妮·埃尔诺(Annie\nErnaux),获奖理由是“她以无畏的勇气和敏锐的洞察力,揭示了个人记忆的根源、那些导致记忆疏离的因素,以及那些束缚人们记忆能力的集体因素。”2021年诺贝尔文学奖被授予坦桑尼亚裔英国作家阿卜杜勒-拉扎克·古尔纳(Abdulrazak\nGurnah),获奖理由是“他以毫不妥协的态度,充满同情心地深入探讨了殖民主义的影响,以及难民在文明与大陆的交汇处所面临的命运。”诺贝尔文学奖小知识自1901年至2025年,共颁发了118次诺贝尔文学奖,未颁发的7年分别是1914年、1918年、1935年、1940年、1941年、1942年和1943年。118次颁奖中,共有122人获奖,仅有四次由两位获奖者共同获得,分别在1904年、1917年、1966年和1974年。共有18位女性获得过诺贝尔文学奖,其中瑞典作家塞尔玛·拉格洛夫(",
+        "published_date": "2026-10-08T22:05:00+08:00",
+        "engines": [
+          "bocha"
+        ]
+      },
+      {
+        "title": "2026诺贝尔文学奖,揭晓_瑞典文学院_表彰_获奖",
+        "url": "https://www.sohu.com/a/1085452877_100226214?scm=10001.322_14-200000.0.0-0-0-0-0.",
+        "snippet": "北京时间10月8日19时许,2026年诺贝尔文学奖揭晓。瑞典文学院宣布2026年诺贝尔文学奖授予\n加拿大作家安妮·卡森,以\n表彰她大胆而富有创造力的作品,这些作品以与古典传统的嬉戏对话,创造了当代文学的新形式。据诺贝尔基金会决定,2026年每项诺贝尔奖的奖金都将增加100万瑞典克朗,达到1200万瑞典克朗。\n诺贝尔文学奖近五年得主\n2025年:拉斯洛·卡撒兹纳霍凯(László\nKrasznahorkai)\n北京时间10月9日19时许,2025年诺贝尔文学奖揭晓。瑞典文学院宣布2025年诺贝尔文学奖授予匈牙利作家László\nKrasznahorkai,以表彰他那些引人入胜且富有远见的作品,这些作品在末日般的恐怖中重新肯定了艺术的力量。\n2024年:韩江\n北京时间10月10日19时许,2024年诺贝尔文学奖揭晓。瑞典文学院宣布2024年诺贝尔文学奖授予韩国作家韩江,以表彰她用强烈的诗意散文直面历史创伤,揭示人类生命的脆弱。\n2023年:约翰·福瑟(Jon\nFosse)\n北京时间10月5日19时许,2023年诺贝尔文学奖揭晓。瑞典文学院宣布2023年诺贝尔文学奖授予挪威剧作家约翰·福瑟(Jon\nFosse),\n以表彰他的创新戏剧和散文,为难以言喻之事发声。\n2022年:安妮·埃尔诺(Annie\nErnaux)\n当地时间10月6日,2022年诺贝尔文学奖获奖名单揭晓,法国作家安妮·埃尔诺(Annie\nErnaux)获奖,“以表彰她发现个人记忆的根源、隔阂和集体限制的勇气和敏锐度”。安妮·埃尔诺,当代法国文坛上有影响的女作家之一,1940年生于法国滨海塞纳省的利勒博纳。2021年11月,获得英国皇家文学学会国际作家终身荣誉奖。代表作有《空衣橱》、《位置》、《一个女人》、《单纯的激情》、《耻辱》、《事件》、《占领》等。长篇小说《悠悠岁月》获人民文学出版社21世纪2009年度最佳外",
+        "published_date": "2026-10-09T11:10:00+08:00",
+        "engines": [
+          "bocha"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "A3": {
+    "query_id": "A3",
+    "query": "iPhone 18 发布",
+    "latency_s": 2.73,
+    "engines_used": [
+      "bocha",
+      "tavily",
+      "serper"
+    ],
+    "engines_failed": [],
+    "engine_errors": {},
+    "relevance": {
+      "enabled": true,
+      "terms": 3,
+      "dropped": 0,
+      "downweighted": 0,
+      "boosted": 0,
+      "dropped_items": [],
+      "downweighted_items": [],
+      "domain_rules": {
+        "blocked": 0,
+        "boosted": 0,
+        "blocked_items": [],
+        "boosted_items": []
+      },
+      "rerank": {
+        "modes": [
+          "embedding"
+        ],
+        "embedding": {
+          "enabled": true,
+          "embedded": 19,
+          "error": null,
+          "sim_min": 0.5435,
+          "sim_max": 0.7058
+        },
+        "llm": null
+      }
+    },
+    "results": [
+      {
+        "title": "Apple 发布 iPhone 18 Pro 与 iPhone 18 Pro Max - Apple (中国大陆)",
+        "url": "https://www.apple.com.cn/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max",
+        "snippet": "iPhone 18 Pro Max 提供256GB、512GB、1TB … 售价为RMB 10,999。 43 小时。iPhone 18 Pro 只需约15 分钟即可充至最高50% 电量",
+        "published_date": "Sep 9, 2026",
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "iPhone 18何時上市？價格、規格、顏色與延後原因整理",
+        "url": "https://www.landtop.com.tw/reviews/541",
+        "snippet": "快速答案：標準版iPhone 18上市日期尚未公布，市場預期為2027年春季。iPhone 18 Pro系列則已確定於2026年9月12日晚上8點開放預訂、9月18日開賣；iPhone ...",
+        "published_date": "Sep 10, 2026",
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "iPhone Duo、iPhone 18 Pro 即将发布，苹果在线商店下线维护 - IT之家",
+        "url": "https://www.ithome.com/1/000/400.htm",
+        "snippet": "标准版iPhone 18 与iPhone Air 2 不会在本次发布会亮相。苹果调整了产品发布节奏，入门款iPhone 不再于秋季发布，预计推迟到次年春季上市。在此之前，苹果 ...",
+        "published_date": "Sep 9, 2026",
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "iPhone 18",
+        "url": "https://baike.baidu.com/item/iPhone%2018/66937148",
+        "snippet": "iPhone 18是苹果公司于2026年9月发布的智能手机产品线,包含iPhone 18 Pro、iPhone 18 Pro Max、iPhone 18及iPhone 18e。 迟至2027年春季发布。",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "iPhone 18 蘋果產品發表會中文翻譯直播",
+        "url": "https://www.youtube.com/watch?v=mNAdnTt7VxI",
+        "snippet": "本次直播主題為2026 的秋季新品發表會中文轉播，0:00 為粉絲會前討論會，01:00 正式開始發表會轉播。內容將會發表iPhone 18 ... iPhone 18 蘋果產品發表會 ...",
+        "published_date": "1 month ago",
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "B1": {
+    "query_id": "B1",
+    "query": "Model Context Protocol official specification",
+    "latency_s": 2.77,
+    "engines_used": [
+      "bocha",
+      "tavily",
+      "serper"
+    ],
+    "engines_failed": [],
+    "engine_errors": {},
+    "relevance": {
+      "enabled": true,
+      "terms": 3,
+      "dropped": 0,
+      "downweighted": 0,
+      "boosted": 4,
+      "dropped_items": [],
+      "downweighted_items": [],
+      "domain_rules": {
+        "blocked": 0,
+        "boosted": 0,
+        "blocked_items": [],
+        "boosted_items": []
+      },
+      "rerank": {
+        "modes": [
+          "embedding"
+        ],
+        "embedding": {
+          "enabled": true,
+          "embedded": 19,
+          "error": null,
+          "sim_min": 0.5933,
+          "sim_max": 0.7159
+        },
+        "llm": null
+      }
+    },
+    "results": [
+      {
+        "title": "Specification – Model Context Protocol （MCP）",
+        "url": "https://modelcontextprotocol.info/specification",
+        "snippet": "The Model Context Protocol (MCP) is an open protocol that enables seamless integration between LLM applications and external data sources and tools.",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "Specification - Model Context Protocol",
+        "url": "https://modelcontextprotocol.io/specification/2025-06-18",
+        "snippet": "Model Context Protocol (MCP) is an open protocol that enables seamless integration between LLM applications and external data sources and tools.",
+        "published_date": "Jun 18, 2025",
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "GitHub - modelcontextprotocol/modelcontextprotocol: Specification and documentation for the Model Context Protocol · GitHub",
+        "url": "https://github.com/modelcontextprotocol/modelcontextprotocol",
+        "snippet": "Specification and documentation for the Model Context Protocol. The official MCP documentation is built using Mintlify and available at modelcontextprotocol.io.",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "A Complete Guide to the Model Context Protocol | Bolder Apps Blog",
+        "url": "https://www.bolderapps.com/blog-posts/model-context-protocol",
+        "snippet": "Model Context Protocol is a standardized communication specification designed to bridge the gap between large language models (LLMs) and the ...",
+        "published_date": "Jun 9, 2026",
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "Anthropic Publishes Model Context Protocol Specification for LLM App Integration - InfoQ",
+        "url": "https://www.infoq.com/news/2024/12/anthropic-model-context-protocol",
+        "snippet": "Anthropic recently released their Model Context Protocol (MCP), an open standard describing a protocol for integrating external resources ...",
+        "published_date": "Dec 24, 2024",
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "B2": {
+    "query_id": "B2",
+    "query": "FastAPI official documentation",
+    "latency_s": 2.55,
+    "engines_used": [
+      "bocha",
+      "tavily",
+      "serper"
+    ],
+    "engines_failed": [],
+    "engine_errors": {},
+    "relevance": {
+      "enabled": true,
+      "terms": 1,
+      "dropped": 0,
+      "downweighted": 0,
+      "boosted": 2,
+      "dropped_items": [],
+      "downweighted_items": [],
+      "domain_rules": {
+        "blocked": 0,
+        "boosted": 0,
+        "blocked_items": [],
+        "boosted_items": []
+      },
+      "rerank": {
+        "modes": [
+          "embedding"
+        ],
+        "embedding": {
+          "enabled": true,
+          "embedded": 17,
+          "error": null,
+          "sim_min": 0.4975,
+          "sim_max": 0.7512
+        },
+        "llm": null
+      }
+    },
+    "results": [
+      {
+        "title": "Home - FastAPI Tutorial",
+        "url": "https://fastapi-tutorial.readthedocs.io",
+        "snippet": "FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints.",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "FastAPI - FastAPI",
+        "url": "https://fastapi.tiangolo.com",
+        "snippet": "FastAPI is a modern, fast (high-performance), web framework for building APIs with Python based on standard Python type hints. The key features are: Fast: Very ...",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "Introduction to FastAPI - GeeksforGeeks",
+        "url": "https://www.geeksforgeeks.org/python/introduction-to-fastapi",
+        "snippet": "FastAPI is a modern Python web framework used to build APIs and backend applications quickly and efficiently. Generates interactive API ...",
+        "published_date": "Jun 20, 2026",
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "An Introduction to Using FastAPI | Refine",
+        "url": "https://refine.dev/blog/introduction-to-fast-api",
+        "snippet": "We'll be looking at FastAPI, a modern Python microframework that simplifies the creation of web APIs using Python programming.",
+        "published_date": "Jan 9, 2025",
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "Get Started With FastAPI – Real Python",
+        "url": "https://realpython.com/get-started-with-fastapi",
+        "snippet": "FastAPI is a web framework for building APIs with Python. It leverages standard Python type hints to provide automatic validation, ...",
+        "published_date": "Sep 22, 2025",
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "B3": {
+    "query_id": "B3",
+    "query": "Python asyncio official documentation",
+    "latency_s": 2.32,
+    "engines_used": [
+      "bocha",
+      "tavily",
+      "serper"
+    ],
+    "engines_failed": [],
+    "engine_errors": {},
+    "relevance": {
+      "enabled": true,
+      "terms": 2,
+      "dropped": 0,
+      "downweighted": 0,
+      "boosted": 5,
+      "dropped_items": [],
+      "downweighted_items": [],
+      "domain_rules": {
+        "blocked": 0,
+        "boosted": 0,
+        "blocked_items": [],
+        "boosted_items": []
+      },
+      "rerank": {
+        "modes": [
+          "embedding"
+        ],
+        "embedding": {
+          "enabled": true,
+          "embedded": 17,
+          "error": null,
+          "sim_min": 0.534,
+          "sim_max": 0.7511
+        },
+        "llm": null
+      }
+    },
+    "results": [
+      {
+        "title": "asyncio — Asynchronous I/O — Python 3.15.1 documentation",
+        "url": "https://docs.python.org/3/library/asyncio.html",
+        "snippet": "asyncio is a library to write concurrent code using the async/await syntax. asyncio is used as a foundation for multiple Python asynchronous frameworks that ...",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "Asyncio support - python-can 4.6.1 documentation",
+        "url": "https://python-can.readthedocs.io/en/stable/asyncio.html",
+        "snippet": "The asyncio module built into Python 3.4 and later can be used to write asynchronous code in a single thread. This library supports receiving messages ...",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "A conceptual overview of asyncio — Python 3.15.1 documentation",
+        "url": "https://docs.python.org/3/howto/a-conceptual-overview-of-asyncio.html",
+        "snippet": "This HOWTO article seeks to help you build a sturdy mental model of how asyncio fundamentally works, helping you understand the how and why behind the ...",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "Python Asyncio Part 1 – Basic Concepts and Patterns | cloudfit-public-docs",
+        "url": "https://bbc.github.io/cloudfit-public-docs/asyncio/asyncio-part-1.html",
+        "snippet": "This post is going to go over the basic concepts behind asyncio without going into implementation details.",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "Python asyncio Module",
+        "url": "https://www.w3schools.com/python/ref_module_asyncio.asp",
+        "snippet": "The asyncio module provides an event loop, tasks, and I/O primitives for concurrent code. Use async / await to write structured asynchronous programs, schedule ...",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "C1": {
+    "query_id": "C1",
+    "query": "智谱开放平台 API 文档",
+    "latency_s": 2.49,
+    "engines_used": [
+      "bocha",
+      "tavily",
+      "serper"
+    ],
+    "engines_failed": [],
+    "engine_errors": {},
+    "relevance": {
+      "enabled": true,
+      "terms": 2,
+      "dropped": 0,
+      "downweighted": 0,
+      "boosted": 0,
+      "dropped_items": [],
+      "downweighted_items": [],
+      "domain_rules": {
+        "blocked": 0,
+        "boosted": 0,
+        "blocked_items": [],
+        "boosted_items": []
+      },
+      "rerank": {
+        "modes": [
+          "embedding"
+        ],
+        "embedding": {
+          "enabled": true,
+          "embedded": 17,
+          "error": null,
+          "sim_min": 0.5249,
+          "sim_max": 0.7626
+        },
+        "llm": null
+      }
+    },
+    "results": [
+      {
+        "title": "快速开始 - 智谱AI开放文档",
+        "url": "https://docs.bigmodel.cn/cn/api/introduction",
+        "snippet": "API 文档提供了智谱开放平台RESTful API 的详细信息，您可以通过点击Try it 按钮直接调试API。 智谱开放平台提供标准的HTTP API 接口，支持多种编程语言和开发环境 ...",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "平台介绍 - 智谱AI开放文档",
+        "url": "https://docs.bigmodel.cn/cn/guide/start/introduction",
+        "snippet": "智谱大模型开放平台bigmodel.cn，提供功能丰富、灵活易用、高性价比的大模型API 服务，支持模型精调、推理等，致力于构建高效通用的“一站式模型即服务” AI 开发新范式 ...",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "智谱丨BigModel 平台",
+        "url": "https://bigmodel.cn",
+        "snippet": "智谱大模型开放平台-新一代国产自主通用AI大模型开放平台，是国内大模型排名前列的大模型网站，研发了多款LLM模型，多模态视觉模型产品，致力于将AI产品技术与行业场景 ...",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "智谱 GLM | PicoClaw",
+        "url": "https://docs.picoclaw.io/zh-Hans/docs/providers/zhipu-api",
+        "snippet": "官方文档:https://docs.bigmodel.cn/cn/coding-plan/tool/openclaw 获取API Key 第一步:访问平台前往智谱AI 开放平台,注册并登录. API Key 你的智谱API Key API Base URL ...",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "智谱AI开放平台",
+        "url": "https://ad.yiban.io/operate/tool/785",
+        "snippet": "完善的API文档、使用指南和场景示例,降低开发门槛… 自动化生成图文、视频等内容,提升创作效率多",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "C2": {
+    "query_id": "C2",
+    "query": "博查搜索 Bocha AI API 官网",
+    "latency_s": 2.83,
+    "engines_used": [
+      "bocha",
+      "tavily",
+      "serper"
+    ],
+    "engines_failed": [],
+    "engine_errors": {},
+    "relevance": {
+      "enabled": true,
+      "terms": 4,
+      "dropped": 0,
+      "downweighted": 0,
+      "boosted": 5,
+      "dropped_items": [],
+      "downweighted_items": [],
+      "domain_rules": {
+        "blocked": 0,
+        "boosted": 0,
+        "blocked_items": [],
+        "boosted_items": []
+      },
+      "rerank": {
+        "modes": [
+          "embedding"
+        ],
+        "embedding": {
+          "enabled": true,
+          "embedded": 17,
+          "error": null,
+          "sim_min": 0.6386,
+          "sim_max": 0.797
+        },
+        "llm": null
+      }
+    },
+    "results": [
+      {
+        "title": "博查AI开放平台 | Search API, Reranker API",
+        "url": "https://open.bochaai.com",
+        "snippet": "博查是一个给AI用的搜索引擎,它可以让你的AI应用连接世界知识,获得干净、准确、高质量的搜索结果。博查AI开放平台提供Web Search API、Semantic Reranker API等搜索服务,让你的AI应用可以从近百亿网页和生态内容源中搜索高质量世界知识,包括新闻、图片、视频、百科、机酒、学术等。适用于 AI Agents、AI Chatbots、AI Search 以及各类 RAG 应用的线上应用或数据冷启动。",
+        "published_date": "2025-04-17T22:53:21+08:00",
+        "engines": [
+          "bocha",
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "博查AI开放平台 | Search API, Reranker API",
+        "url": "https://open.bochaai.com/terms-of-service",
+        "snippet": "博查是一个给AI用的搜索引擎,它可以让你的AI应用连接世界知识,获得干净、准确、高质量的搜索结果。博查AI开放平台提供Web Search API、Semantic",
+        "published_date": "May 29, 2025",
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "博查AI搜索 - 多模态AI搜索，答案丰富多彩",
+        "url": "https://bocha.cn",
+        "snippet": "博查是一个给AI用的搜索引擎，它可以让你的AI应用连接世界知识，获得干净、准确、高质量的搜索结果。",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "博查搜索API【最新版】_数据API_人工智能_API-云市场-阿里云",
+        "url": "https://market.aliyun.com/detail/cmapi00069848",
+        "snippet": "博查是一款专为AI应用打造的世界知识搜索引擎，通过多模态混合搜索与语义排序技术，为AI Agents、AI Chatbots及RAG场景提供干净、准确、高质量的实时搜索结果， ...",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "GitHub - BochaAI/bocha-search-mcp: Bocha Search MCP Server. · GitHub",
+        "url": "https://github.com/bochaai/bocha-search-mcp",
+        "snippet": "博查是一个给AI用的搜索引擎，让你的AI应用从近百亿网页和生态内容源中获取高质量的世界知识，涵盖天气、新闻、百科、医疗、火车票、图片等多种领域。 分类. 网页搜索 ...",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "C3": {
+    "query_id": "C3",
+    "query": "Rust 编程语言 官网",
+    "latency_s": 2.64,
+    "engines_used": [
+      "bocha",
+      "tavily",
+      "serper"
+    ],
+    "engines_failed": [],
+    "engine_errors": {},
+    "relevance": {
+      "enabled": true,
+      "terms": 2,
+      "dropped": 0,
+      "downweighted": 0,
+      "boosted": 7,
+      "dropped_items": [],
+      "downweighted_items": [],
+      "domain_rules": {
+        "blocked": 0,
+        "boosted": 0,
+        "blocked_items": [],
+        "boosted_items": []
+      },
+      "rerank": {
+        "modes": [
+          "embedding"
+        ],
+        "embedding": {
+          "enabled": true,
+          "embedded": 16,
+          "error": null,
+          "sim_min": 0.479,
+          "sim_max": 0.7708
+        },
+        "llm": null
+      }
+    },
+    "results": [
+      {
+        "title": "Rust 程序设计语言 - Rust 程序设计语言 简体中文版",
+        "url": "https://rust.bootcss.com",
+        "snippet": "Rust 程序设计语言的2018 Edition 包含许多的改进使得Rust 更为工程化并更为容易学习。 本书的HTML 版本可以在https://doc.rust-lang.org/stable/book/",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "Rust 文档网 - Rust 官方文档中文教程",
+        "url": "https://rustwiki.org",
+        "snippet": "Rust 文档网是Rust 官方文档中文翻译项目组创建的Rust 语言文档在线知识库，涵盖了最全面的Rust 语言的中文学习内容和编程入门资料，包括Rust 官方或非官方文档的中文 ...",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "Rust Programming Language",
+        "url": "https://rust-lang.org",
+        "snippet": "Rust is blazingly fast and memory-efficient: with no runtime or garbage collector, it can power performance-critical services, run on embedded devices, and ...",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "The Rust Foundation - Official",
+        "url": "https://rustfoundation.org",
+        "snippet": "The Rust Foundation is the nonprofit steward of the Rust programming language and its vibrant open source community. Learn more and get involved today.",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "Rust 程序设计语言 - Rust 程序设计语言 简体中文版",
+        "url": "https://kaisery.github.io/trpl-zh-cn",
+        "snippet": "本书的英文原版HTML 格式可以在https://doc.rust-lang.org/stable/book/ 在线阅读；使用 rustup 安装的Rust 也包含一份英文离线版，运行 rustup doc --book 即可打开。 本 ...",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "D1": {
+    "query_id": "D1",
+    "query": "Model Context Protocol news October 2026",
+    "latency_s": 1.86,
+    "engines_used": [
+      "bocha",
+      "tavily",
+      "serper"
+    ],
+    "engines_failed": [],
+    "engine_errors": {},
+    "relevance": {
+      "enabled": true,
+      "terms": 6,
+      "dropped": 0,
+      "downweighted": 0,
+      "boosted": 0,
+      "dropped_items": [],
+      "downweighted_items": [],
+      "domain_rules": {
+        "blocked": 0,
+        "boosted": 0,
+        "blocked_items": [],
+        "boosted_items": []
+      },
+      "rerank": {
+        "modes": [
+          "embedding"
+        ],
+        "embedding": {
+          "enabled": true,
+          "embedded": 17,
+          "error": null,
+          "sim_min": 0.5111,
+          "sim_max": 0.6177
+        },
+        "llm": null
+      }
+    },
+    "results": [
+      {
+        "title": "Why Model Context Protocol is suddenly on every executive agenda | CIO",
+        "url": "https://www.cio.com/article/4136548/why-model-context-protocol-is-suddenly-on-every-executive-agenda.html",
+        "snippet": "As AI agents begin operating across enterprise systems, MCP is emerging as the connective layer IT leaders can't afford to ignore.",
+        "published_date": "Feb 24, 2026",
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "Model Context Protocol is going stateless to make scaling simpler | InfoWorld",
+        "url": "https://www.infoworld.com/article/4201254/model-context-protocol-is-going-stateless-to-make-scaling-simpler.html",
+        "snippet": "The latest release candidate, scheduled for release on July 28, removes protocol-level sessions in favor of a stateless architecture, a change ...",
+        "published_date": "Jul 24, 2026",
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "Best Guide to the Model Context Protocol (MCP) in 2026",
+        "url": "https://www.youtube.com/watch?v=NIIjOy0NYaU",
+        "snippet": "Model Context Protocol (MCP) is changing how AI agents connect with tools, data, and business systems. In this video, we break down what MCP is ...",
+        "published_date": "2 months ago",
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "MCP Model Context Protocol for Business | 2026 Guide | NAXIA",
+        "url": "https://www.naxiaglobal.com/blog/mcp-model-context-protocol-business-en",
+        "snippet": "The Model Context Protocol (MCP) is an open standard that connects AI agents to tools, data and business applications through one common ...",
+        "published_date": "Apr 22, 2026",
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "State of Model Context Protocol in Software 2026",
+        "url": "https://stacklok.com/resources/state-of-mcp-in-software-2026",
+        "snippet": "See how Fortune 500 enterprises are adopting MCP in 2026. We surveyed 100 technical leaders so you can benchmark your use of MCP against peers.",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "D2": {
+    "query_id": "D2",
+    "query": "Java island travel guide",
+    "latency_s": 2.79,
+    "engines_used": [
+      "bocha",
+      "tavily",
+      "serper"
+    ],
+    "engines_failed": [],
+    "engine_errors": {},
+    "relevance": {
+      "enabled": true,
+      "terms": 4,
+      "dropped": 0,
+      "downweighted": 1,
+      "boosted": 0,
+      "dropped_items": [],
+      "downweighted_items": [
+        {
+          "title": "Java, {Country} Hướng dẫn du lịch  Những việc nên làm tại Ja",
+          "url": "https://www.jetstar.com/vn/vi/inspiration/destinations/indonesia/java"
+        }
+      ],
+      "domain_rules": {
+        "blocked": 0,
+        "boosted": 0,
+        "blocked_items": [],
+        "boosted_items": []
+      },
+      "rerank": {
+        "modes": [
+          "embedding"
+        ],
+        "embedding": {
+          "enabled": true,
+          "embedded": 16,
+          "error": null,
+          "sim_min": 0.4398,
+          "sim_max": 0.6521
+        },
+        "llm": null
+      }
+    },
+    "results": [
+      {
+        "title": "Java travel guide",
+        "url": "https://www.responsiblevacation.com/vacations/java/travel-guide",
+        "snippet": "Honest and easy to read Java travel guide with location summary, useful map and highlights. It is the most populous island in the world, home to 141 million ...",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "Java | Indonesia Travel Guide | Rough Guides",
+        "url": "https://www.roughguides.com/indonesia/java",
+        "snippet": "Plan your visit to Java, Indonesia: find out where to go and what to do. Read about itineraries, activities, places to stay and travel essentials.",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "Java Travel Guide | Your 1–2 Week Route In The Island",
+        "url": "https://www.indietraveller.co/java-travel-guide",
+        "snippet": "Heading to Java? This 1–2 week Java travel guide covers epic volcanoes, sacred temples, and unforgettable local moments across the island.",
+        "published_date": "Jul 14, 2025",
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "Amazon Best Sellers: Best Java Travel Guides",
+        "url": "https://www.amazon.com/Best-Sellers-Java-Travel-Guides/zgbs/books/67639",
+        "snippet": "Indonesia Travel Guide 2025-2026 & Beyond: Your Ultimate Guide to Bali, Java, Sumatra, Lombok, Komodo, and Sulawesi — Top Attractions, Hidden Gems, Culture, and ...",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "Java Itinerary: 2-week Java Guide And Travel Advice",
+        "url": "https://cassiethehag.com/java-travel-guide-2-week-itinerary-and-backpacking-information-for-java",
+        "snippet": "The Java itinerary focuses on spending one week in Central Java and one week in East Java. It mixes both must-see attractions and off-the-beaten-track,",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "D3": {
+    "query_id": "D3",
+    "query": "Apple fruit nutrition facts",
+    "latency_s": 1.97,
+    "engines_used": [
+      "bocha",
+      "tavily",
+      "serper"
+    ],
+    "engines_failed": [],
+    "engine_errors": {},
+    "relevance": {
+      "enabled": true,
+      "terms": 4,
+      "dropped": 6,
+      "downweighted": 2,
+      "boosted": 0,
+      "dropped_items": [
+        {
+          "title": "水果营养成分表.doc_淘豆网",
+          "url": "https://www.taodocs.com/p-549938525.html"
+        },
+        {
+          "title": "苹果_营养饮食专题一流养生网(168866.com)",
+          "url": "http://www.168866.com/yangsheng/pingguo_103.shtml"
+        },
+        {
+          "title": "苹果的营养成份如何? - 问答频道 - 博禾医生",
+          "url": "https://www.bohe.cn/ask/view/103727216.html"
+        },
+        {
+          "title": "苹果的营养价值分析 - 水果邦 -发现农友,网聚农人力量。",
+          "url": "http://www.shuiguobang.com/html/02/n-37602-2.html"
+        },
+        {
+          "title": "苹果的营养价值及功效 - 权威语音 - 大众养生网",
+          "url": "https://www.cndzys.com/ylcore/voice_detail/18859.html"
+        },
+        {
+          "title": "苹果的营养价值及功效 - 权威视频 - 大众养生网",
+          "url": "https://www.cndzys.com/ylcore/video_detail/4789.html"
+        }
+      ],
+      "downweighted_items": [
+        {
+          "title": "How Healthy Are Apples? From Calories to Whether They * ...",
+          "url": "https://www.elior-na.com/spotlight/how-healthy-are-apples-calories-whether-they-really-keep-doctor-away-heres-what-know"
+        },
+        {
+          "title": "苹果的营养成分表分析",
+          "url": "https://m.chachaba.com/yyeat/shiwu/108644.html"
+        }
+      ],
+      "domain_rules": {
+        "blocked": 0,
+        "boosted": 0,
+        "blocked_items": [],
+        "boosted_items": []
+      },
+      "rerank": {
+        "modes": [
+          "embedding"
+        ],
+        "embedding": {
+          "enabled": true,
+          "embedded": 11,
+          "error": null,
+          "sim_min": 0.5233,
+          "sim_max": 0.6505
+        },
+        "llm": null
+      }
+    },
+    "results": [
+      {
+        "title": "Nutritional Benefits - NH Fruit Growers Association",
+        "url": "https://www.nhfruitgrowers.org/nutritional-benefits",
+        "snippet": "Apples are a good source of potassium, folic acid, and vitamin C. A medium apple, approximately 5 ounces, has only 81 calories and a whopping 3.7 grams of fiber ...",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "Apple Nutrition",
+        "url": "https://www.pinkladyapples.co.uk/the-pink-lady-story/apple-nutrition-vitamins-and-minerals",
+        "snippet": "Apple Mineral Content ; Potassium (mg), 100 mg, 152 mg ; Calcium (mg), 5 mg, 8 mg ; Magnesium (mg), 4 mg, 6 mg ; Phosphorus (mg), 8 mg, 12 mg ...",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "Apples | SNAP-Ed",
+        "url": "https://snaped.fna.usda.gov/resources/nutrition-education-materials/seasonal-produce-guide/apples",
+        "snippet": "Nutrition Information ; Calcium, 1 mg ; Potassium, 4 mg ; Sodium, 2 mg ; Iron, 1 mg.",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "Apples 101: Nutrition Facts and Health Benefits",
+        "url": "https://www.healthline.com/nutrition/foods/apples",
+        "snippet": "Apple nutrition facts · Calories: 94.6 grams (g) · Water: 156 g · Protein: 0.473 g · Carbohydrates: 25.1 g · Sugar: 18.9 g · Fiber: 4.37 g · Fat: 0.3 g ...",
+        "published_date": "Jan 20, 2025",
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "Apple Nutrition Information - Sunrise Orchards",
+        "url": "https://www.sunriseapples.com/content/apples/apple-nutrition",
+        "snippet": "APPLE NUTRITION FACTS ; Sodium, 0mg, 0% ; Potassium, 170mg, 5% ; Total Carbohydrate, 22g, 7% ; Dietary Fiber, 5g, 20%.",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "E1": {
+    "query_id": "E1",
+    "query": "HTTP 451 status code meaning",
+    "latency_s": 2.58,
+    "engines_used": [
+      "bocha",
+      "tavily",
+      "serper"
+    ],
+    "engines_failed": [],
+    "engine_errors": {},
+    "relevance": {
+      "enabled": true,
+      "terms": 5,
+      "dropped": 0,
+      "downweighted": 2,
+      "boosted": 0,
+      "dropped_items": [],
+      "downweighted_items": [
+        {
+          "title": "Company, Investor & Fund Profiles (Free Previews) | PitchBoo",
+          "url": "https://pitchbook.com/profiles/search?q=Envestnet+%7C+Tamarac"
+        },
+        {
+          "title": "HTTP协议中几个状态码的含义:503 500 401 403 404 200 301 302。。。 - 星云惊蛰 - ",
+          "url": "https://www.cnblogs.com/jzxy/articles/10037903.html"
+        }
+      ],
+      "domain_rules": {
+        "blocked": 0,
+        "boosted": 0,
+        "blocked_items": [],
+        "boosted_items": []
+      },
+      "rerank": {
+        "modes": [
+          "embedding"
+        ],
+        "embedding": {
+          "enabled": true,
+          "embedded": 19,
+          "error": null,
+          "sim_min": 0.1815,
+          "sim_max": 0.6461
+        },
+        "llm": null
+      }
+    },
+    "results": [
+      {
+        "title": "RFC 7725: An HTTP Status Code to Report Legal Obstacles | RFC Editor",
+        "url": "https://www.rfc-editor.org/info/rfc7725",
+        "snippet": "451 Unavailable For Legal Reasons This status code indicates that the server is denying access to the resource as a consequence of a legal demand.",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "451 Unavailable For Legal Reasons - HTTP status code explained",
+        "url": "https://http.dev/451",
+        "snippet": "Legal demands preventing access to requested content are communicated through the 451 Unavailable For Legal Reasons status code.",
+        "published_date": "Aug 11, 2026",
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "451 Unavailable For Legal Reasons - HTTP | MDN",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/451",
+        "snippet": "status code indicates that the user requested a resource that is not available due to legal reasons, such as a web page for which a legal ...",
+        "published_date": "Jul 4, 2025",
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "How To Fix or Bypass Error 451: Unavailable Due to Legal Reasons",
+        "url": "https://www.youtube.com/watch?v=n9CsUK7B0X0",
+        "snippet": "Error 451: Unavailable Due to … this error message indicates that the website owner or your local government/authority has blocked access to ...",
+        "published_date": "4 years ago",
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "HTTP 451",
+        "url": "https://en.wikipedia.org/wiki/HTTP_451",
+        "snippet": "HTTP 451 Unavailable For Legal Reasons is a response status code that indicates that a request cannot be satisfied for legal reasons, such as a web page ...",
+        "published_date": null,
+        "engines": [
+          "serper"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "E2": {
+    "query_id": "E2",
+    "query": "reciprocal rank fusion RRF formula",
+    "latency_s": 2.61,
+    "engines_used": [
+      "bocha",
+      "tavily",
+      "serper"
+    ],
+    "engines_failed": [],
+    "engine_errors": {},
+    "relevance": {
+      "enabled": true,
+      "terms": 5,
+      "dropped": 0,
+      "downweighted": 0,
+      "boosted": 0,
+      "dropped_items": [],
+      "downweighted_items": [],
+      "domain_rules": {
+        "blocked": 0,
+        "boosted": 0,
+        "blocked_items": [],
+        "boosted_items": []
+      },
+      "rerank": {
+        "modes": [
+          "embedding"
+        ],
+        "embedding": {
+          "enabled": true,
+          "embedded": 18,
+          "error": null,
+          "sim_min": 0.6085,
+          "sim_max": 0.7047
+        },
+        "llm": null
+      }
+    },
+    "results": [
+      {
+        "title": "Medium",
+        "url": "https://medium.com/@devalshah1619/mathematical-intuition-behind-reciprocal-rank-fusion-rrf-explained-in-2-mins-002df0cc5e2a",
+        "snippet": "Using 1/(rank + k), RRF gives more weight to higher ranks (lower rank numbers). This ensures that documents ranked highly by multiple retrievers ...",
+        "published_date": "2 years ago",
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "Reciprocal rank fusion | Elasticsearch Reference",
+        "url": "https://www.elastic.co/docs/reference/elasticsearch/rest-apis/reciprocal-rank-fusion",
+        "snippet": "Reciprocal rank fusion (RRF) is a method for combining multiple result sets with different relevance indicators into a single result set.",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "Introducing reciprocal rank fusion for hybrid search - OpenSearch",
+        "url": "https://opensearch.org/blog/introducing-reciprocal-rank-fusion-hybrid-search",
+        "snippet": "RRF merges ranked results from multiple query sources, such as neural search, k-NN, and Boolean queries, into a single relevance-optimized list.",
+        "published_date": "Feb 12, 2025",
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "What is reciprocal rank fusion in hybrid search?",
+        "url": "https://www.youtube.com/watch?v=2uBcjEecr38&vl=en",
+        "snippet": "In this video, we will learn about what reciprocal rank fusion is, how it works and why it matters in hybrid search. What you will learn: ...",
+        "published_date": "11 months ago",
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      },
+      {
+        "title": "What is Reciprocal Rank Fusion? | ParadeDB",
+        "url": "https://www.paradedb.com/learn/search-concepts/reciprocal-rank-fusion",
+        "snippet": "The standard RRF formula treats all ranking sources equally, but Weighted RRF allows you to assign different weights to each method. For example, when ...",
+        "published_date": null,
+        "engines": [
+          "tavily",
+          "serper"
+        ]
+      }
+    ],
+    "error": null
+  }
+}
