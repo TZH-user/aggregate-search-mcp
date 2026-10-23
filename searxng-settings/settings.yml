@@ -1,0 +1,30 @@
+# SearXNG 最小配置:必须开 JSON 格式输出(aggregate-search 的 searxng 适配器用 format=json)
+use_default_settings: true
+
+server:
+  secret_key: "请改成任意长随机串"  # 生成: python -c "import secrets; print(secrets.token_hex(32))"
+  limiter: false  # 本机自用,关闭限流;公网部署必须开启并配 botdetection
+
+search:
+  formats:
+    - html
+    - json
+
+engines:
+  # 按需增删;以下是聚合搜索常用的最低集合
+  - name: google
+    engine: google
+    shortcut: g
+    disabled: false
+  - name: bing
+    engine: bing
+    shortcut: b
+    disabled: false
+  - name: duckduckgo
+    engine: duckduckgo
+    shortcut: ddg
+    disabled: false
+  - name: wikipedia
+    engine: wikipedia
+    shortcut: wp
+    disabled: false

@@ -7,17 +7,22 @@
 
 from __future__ import annotations
 
+import asyncio
+import copy
 import logging
 import os
 import time
+from collections import OrderedDict
 
 import httpx
 
 from . import config
 from .engines import build_engine
 from .engines.base import SearchEngine
-from .fusion import detect_language, fuse
+from .fusion import detect_language, diversify, fuse, merge_near_duplicates
 from .models import SearchResult
+from .rerank import apply_rerank
+from .relevance import apply_domain_rules, apply_relevance
 
 log = logging.getLogger("aggregate-search")
 
@@ -36,6 +41,11 @@ PROXY_PROBE_TIMEOUT = float(os.getenv("AGG_PROXY_PROBE_TIMEOUT_S", "4"))
 
 # {engine_name: monotonic 失效时间}
 _unhealthy: dict[str, float] = {}
+
+# 查询缓存:{(query, max_results, per_engine, engines, freshness): (失效时刻, 输出副本)}
+# 只缓存成功响应(带 error 的不缓存,下次可重试);进程内 LRU,上限 CACHE_MAX 条
+_cache: OrderedDict[tuple, tuple[float, dict]] = OrderedDict()
+CACHE_MAX = 128
 
 _clients: dict[str, httpx.AsyncClient] = {}
 
@@ -345,11 +355,24 @@ async def aggregate_search(
     engines: str | None = None,
     freshness: str | None = None,
 ) -> dict[str, object]:
-    import anyio
-
     query = (query or "").strip()
     if not query:
         return {"error": "query 不能为空"}
+
+    # 查询缓存:同参数 TTL 内直接回缓存(最终输出含融合/过滤/重排全套处理结果)
+    cache_ttl = float(os.getenv("AGG_CACHE_TTL_S", "300"))
+    cache_key = None
+    if cache_ttl > 0:
+        cache_key = (query, max_results, per_engine, engines, freshness)
+        hit = _cache.get(cache_key)
+        if hit is not None:
+            expires, payload = hit
+            if time.monotonic() < expires:
+                _cache.move_to_end(cache_key)
+                out = copy.deepcopy(payload)
+                out["cached"] = True
+                return out
+            _cache.pop(cache_key, None)
 
     engine_list = _select_engines(engines)
     if not engine_list:
@@ -361,16 +384,44 @@ async def aggregate_search(
     per_engine = max(3, min(int(per_engine), MAX_PER_ENGINE))
     lang = detect_language(query)
 
-    runs = list(await anyio.gather(*[
-        _run_one(e, query, per_engine, freshness) for e in engine_list
-    ]))
-    batches = [r[0] for r in runs]
+    # 软截断:超过 AGG_SOFT_DEADLINE_S 后直接采用已完成引擎的结果,慢引擎本轮跳过
+    # (慢≠坏,不进健康黑名单);全部引擎都未完成时退回完整等待,绝不因截断返回空。
+    soft_deadline = float(os.getenv("AGG_SOFT_DEADLINE_S", "10"))
+    tasks = {asyncio.create_task(_run_one(e, query, per_engine, freshness)): e for e in engine_list}
+    done, pending = await asyncio.wait(tasks, timeout=soft_deadline if soft_deadline > 0 else None)
+    if pending and not done:
+        done, pending = await asyncio.wait(pending)
+    soft_timed_out = [tasks[t].name for t in pending]
+    for t in pending:
+        t.cancel()
 
-    fused = fuse(batches, lang=lang, weights=config.weights_map())[:max_results]
+    result_by_task = {id(t): t.result() for t in done}
+    per_engine_runs = [(e, result_by_task[id(t)]) for t, e in tasks.items() if id(t) in result_by_task]
+    batches = [b for _, (b, _) in per_engine_runs]
 
-    used = [e.name for e, (b, _) in zip(engine_list, runs) if b]
-    failed = [e.name for e, (b, _) in zip(engine_list, runs) if not b]
-    errors = {e.name: info for e, (_, info) in zip(engine_list, runs) if info}
+    fused = fuse(batches, lang=lang, weights=config.weights_map())
+    # 近重复合并:同站同标题的参数变体页并成一条(在过滤/重排之前,减少候选噪声)
+    if os.getenv("AGG_NEAR_DUP", "1") != "0":
+        try:
+            threshold = float(os.getenv("AGG_NEAR_DUP_THRESHOLD", "0.9"))
+        except ValueError:
+            threshold = 0.9
+        fused = merge_near_duplicates(fused, threshold=threshold)
+    # 相关性过滤在截取 top-K 之前:被剔除/沉底的跑题结果让位于更深的名次
+    fused, relevance_stats = apply_relevance(query, fused)
+    # 用户可配的域名偏好(AGG_DOMAIN_BOOST/BLOCK),独立于覆盖率启发式
+    fused, domain_stats = apply_domain_rules(fused)
+    relevance_stats["domain_rules"] = domain_stats
+    # 语义重排(可选,AGG_RERANK=embedding):embedding 相似度融进分数,失败自动降级保序
+    fused, rerank_stats = await apply_rerank(query, fused)
+    relevance_stats["rerank"] = rerank_stats
+    # 单站限条:同 host 最多 AGG_MAX_PER_HOST 条(默认 2,0 关闭),防止条款页/近重复霸屏
+    fused = diversify(fused, max_per_host=int(os.getenv("AGG_MAX_PER_HOST", "2")))
+    fused = fused[:max_results]
+
+    used = [e.name for e, (b, _) in per_engine_runs if b]
+    failed = [e.name for e, (b, _) in per_engine_runs if not b]
+    errors = {e.name: info for e, (_, info) in per_engine_runs if info}
 
     out: dict[str, object] = {
         "query": query,
@@ -378,10 +429,17 @@ async def aggregate_search(
         "engines_used": used,
         "engines_failed_or_empty": failed,
         "engine_errors": errors,  # {引擎名: {kind, status, detail, hint}}
+        "soft_timed_out": soft_timed_out,  # 软截断跳过的引擎(本轮无结果,未拉黑)
         "unhealthy_cache": {k: v for k, v in health_snapshot().items() if not v},
+        "relevance": relevance_stats,
         "results": [r.merged_payload() for r in fused],
     }
     if not used:
         # 全部失败时把原因直接摆在返回值里,不再只给一个引擎名
         out["error"] = all_failed_hint(errors)
+
+    if cache_key is not None and not out.get("error"):
+        _cache[cache_key] = (time.monotonic() + cache_ttl, copy.deepcopy(out))
+        while len(_cache) > CACHE_MAX:
+            _cache.popitem(last=False)
     return out

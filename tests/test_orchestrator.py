@@ -25,9 +25,12 @@ class FakeEngine(SearchEngine):
 
 @pytest.fixture(autouse=True)
 def clean_state(monkeypatch):
+    monkeypatch.setenv("AGG_CACHE_TTL_S", "0")  # 隔离缓存,防跨测试污染
     orchestrator._unhealthy.clear()
+    orchestrator._cache.clear()
     yield
     orchestrator._unhealthy.clear()
+    orchestrator._cache.clear()
 
 
 def patch_specs(monkeypatch, engines):

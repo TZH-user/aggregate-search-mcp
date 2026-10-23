@@ -1,0 +1,27 @@
+# 可选:SearXNG 自托管聚合引擎(免 key、无配额上限)
+# 本机无 docker 时仅作为配置模板;在有 docker 的机器上:
+#   docker compose up -d
+#   然后在 .env 里加 SEARXNG_BASE_URL=http://127.0.0.1:8888
+#   重启 MCP server,engine_status 里 searxng 变为 active
+services:
+  searxng:
+    image: searxng/searxng:latest
+    container_name: aggregate-search-searxng
+    ports:
+      - "8888:8080"
+    environment:
+      - SEARXNG_BASE_URL=http://127.0.0.1:8888/
+    volumes:
+      - ./searxng-settings:/etc/searxng:rw
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - SETGID
+      - SETUID
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+        max-file: "1"
+    restart: unless-stopped

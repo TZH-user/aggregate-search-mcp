@@ -15,5 +15,6 @@ def build_engine(spec_name: str, client, api_key: str = "", base_url: str = "") 
         "tavily": "TavilyEngine",
         "serper": "SerperEngine",
         "searxng": "SearXNGEngine",
+        "duckduckgo": "DuckDuckGoEngine",
     }[spec_name])
     return cls(client, api_key=api_key, base_url=base_url)

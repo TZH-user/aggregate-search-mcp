@@ -25,7 +25,9 @@ def test_canonical_url_keeps_meaningful_params():
 
 def test_canonical_url_trailing_slash():
     assert canonical_url("https://example.com/a/b/") == "https://example.com/a/b"
-    assert canonical_url("https://example.com/") == "https://example.com/"
+    # 根路径带不带尾斜杠必须归一(否则同一首页会因引擎写法差异重复占两席)
+    assert canonical_url("https://example.com/") == "https://example.com"
+    assert canonical_url("https://example.com") == "https://example.com"
 
 
 def test_detect_language():
